@@ -1,0 +1,40 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Mar 18, 2025 at 23:39:40 +07
+xrun
+	-sv
+	-f mux_4to1_tb.list
+		../1.1_src/mux_4to1.sv
+		../2.1_tb/mux_4to1_tb.sv
+Recompiling... reason: file '../1.1_src/mux_4to1.sv' is newer than expected.
+	expected: Sat Mar 15 17:59:55 2025
+	actual:   Sat Mar 15 18:00:03 2025
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mux_4to1_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           8       8
+		Scalar wires:        2       -
+		Vectored wires:      2       -
+		Always blocks:       1       1
+		Initial blocks:      1       1
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.mux_4to1_tb:sv
+Loading snapshot worklib.mux_4to1_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Testcase # 1 PASSED:| select = 00| data = 1010| expected = 0| got = 0 
+Testcase # 2 PASSED:| select = 01| data = 1010| expected = 1| got = 1 
+Testcase # 3 PASSED:| select = 10| data = 1010| expected = 0| got = 0 
+Testcase # 4 FAILED:| select = 11| data = 1010| expected = 0| got = 1 
+Simulation complete via $finish(1) at time 40 NS + 0
+../2.1_tb/mux_4to1_tb.sv:45   $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Mar 18, 2025 at 23:39:41 +07  (total: 00:00:01)

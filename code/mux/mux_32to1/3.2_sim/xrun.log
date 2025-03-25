@@ -1,0 +1,46 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Mar 18, 2025 at 23:45:11 +07
+xrun
+	-sv
+	-f mux_32to1_tb.list
+		../1.2_src/mux_32to1.sv
+		../2.2_tb/mux_32to1_tb.sv
+Recompiling... reason: file '../2.2_tb/mux_32to1_tb.sv' is newer than expected.
+	expected: Tue Mar 18 23:41:53 2025
+	actual:   Tue Mar 18 23:45:03 2025
+file: ../2.2_tb/mux_32to1_tb.sv
+	module worklib.mux_32to1_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mux_32to1_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mux_32to1_tb:sv <0x39cdfe47>
+			streams:   4, words:  5646
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           7       7
+		Scalar wires:        2       -
+		Vectored wires:      2       -
+		Initial blocks:      1       1
+		Cont. assignments:   1       1
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.mux_32to1_tb:sv
+Loading snapshot worklib.mux_32to1_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Testcase # 1 PASSED:| select = 00000| data = 01001111001010110011011001101011| expected = 1| got = 1 
+Testcase # 2 PASSED:| select = 10100| data = 10101001100110011001100111001100| expected = 1| got = 1 
+Testcase # 3 PASSED:| select = 11100| data = 11111111111111111111111111111111| expected = 1| got = 1 
+Testcase # 4 PASSED:| select = 00011| data = 01000000111000000000001100001101| expected = 1| got = 1 
+Simulation complete via $finish(1) at time 40 NS + 0
+../2.2_tb/mux_32to1_tb.sv:45   $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Mar 18, 2025 at 23:45:12 +07  (total: 00:00:01)

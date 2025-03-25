@@ -1,0 +1,53 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Mar 15, 2025 at 17:00:56 +07
+xrun
+	-sv
+	-f ic74138_tb.list
+		../1.src/ic74138.sv
+		../2.tb/ic74138_tb.sv
+Recompiling... reason: file '../2.tb/ic74138_tb.sv' is newer than expected.
+	expected: Fri Mar 14 22:58:41 2025
+	actual:   Sat Mar 15 17:00:40 2025
+file: ../2.tb/ic74138_tb.sv
+	module worklib.ic74138_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ic74138_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ic74138_tb:sv <0x54d7963a>
+			streams:   5, words:  7239
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           10      10
+		Scalar wires:         3       -
+		Vectored wires:       3       -
+		Always blocks:        1       1
+		Initial blocks:       1       1
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.ic74138_tb:sv
+Loading snapshot worklib.ic74138_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Testcase # 1  | g1 = x, g2a = 1, g2b = x | decoder = 11111111, decoder_tc = 11111111 | PASSED 
+Testcase # 2  | g1 = x, g2a = x, g2b = 1 | decoder = 11111111, decoder_tc = 11111111 | PASSED 
+Testcase # 3  | g1 = 0, g2a = x, g2b = x | decoder = 11111111, decoder_tc = 11111111 | PASSED 
+Testcase # 4  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11111110, decoder_tc = 11111110 | PASSED 
+Testcase # 5  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11111101, decoder_tc = 11111101 | PASSED 
+Testcase # 6  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11111011, decoder_tc = 11111011 | PASSED 
+Testcase # 7  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11110111, decoder_tc = 11110111 | PASSED 
+Testcase # 8  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11101111, decoder_tc = 11101111 | PASSED 
+Testcase # 9  | g1 = 1, g2a = 0, g2b = 0 | decoder = 11011111, decoder_tc = 11011111 | PASSED 
+Testcase #10  | g1 = 1, g2a = 0, g2b = 0 | decoder = 10111111, decoder_tc = 10111111 | PASSED 
+Testcase #11  | g1 = 1, g2a = 0, g2b = 0 | decoder = 01111111, decoder_tc = 01111110 | FAILED 
+Simulation complete via $finish(1) at time 110 NS + 0
+../2.tb/ic74138_tb.sv:57     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Mar 15, 2025 at 17:00:58 +07  (total: 00:00:02)

@@ -1,0 +1,34 @@
+s1(15Mar2025:15:19:25):  xrun -hal -sv -f mux_4to1.list 
+s2(15Mar2025:15:20:12):  xrun -hal -sv -f mux_4to1.list 
+s3(15Mar2025:15:21:28):  xrun -hal -sv -f mux_4to1.list 
+s4(15Mar2025:15:30:05):  xrun -hal -sv -f mux_4to1.list 
+s5(15Mar2025:15:30:32):  xrun -hal -sv -f mux_4to1.list 
+s6(15Mar2025:15:56:03):  xrun -hal -sv -f mux_4to1.list 
+s7(15Mar2025:15:56:22):  xrun -hal -sv -f mux_4to1.list 
+s8(15Mar2025:15:56:32):  xrun -hal -sv -f mux_4to1.list 
+s9(15Mar2025:15:56:44):  xrun -hal -sv -f mux_4to1.list 
+s10(15Mar2025:16:03:28):  xrun -sv -f mux_4to1_tb.list 
+s11(15Mar2025:16:04:02):  xrun -sv -f mux_4to1_tb.list 
+s12(15Mar2025:16:04:22):  xrun -sv -f mux_4to1_tb.list 
+s13(15Mar2025:16:05:04):  xrun -sv -f mux_4to1_tb.list 
+s14(15Mar2025:16:05:30):  xrun -sv -f mux_4to1_tb.list 
+s15(15Mar2025:16:07:13):  xrun -sv -f mux_4to1_tb.list 
+s16(15Mar2025:16:12:06):  xrun -sv -f mux_4to1_tb.list 
+s17(15Mar2025:16:13:35):  xrun -sv -f mux_4to1_tb.list 
+s18(15Mar2025:17:03:49):  xrun -sv -f mux_4to1_tb.list 
+s19(15Mar2025:17:07:19):  xrun -sv -f mux_4to1_tb.list 
+s20(15Mar2025:17:12:03):  xrun -sv -f mux_4to1_tb.list 
+s21(15Mar2025:17:12:29):  xrun -sv -f mux_4to1_tb.list 
+s22(15Mar2025:17:21:40):  xrun -sv -f mux_4to1_tb.list 
+s23(15Mar2025:17:22:24):  xrun -sv -f mux_4to1_tb.list 
+s24(15Mar2025:17:22:46):  xrun -sv -f mux_4to1_tb.list 
+s25(15Mar2025:17:23:40):  xrun -sv -f mux_4to1_tb.list 
+s26(15Mar2025:17:25:32):  xrun -sv -f mux_4to1_tb.list 
+s27(15Mar2025:17:36:42):  xrun -sv -f mux_4to1_tb.list 
+s28(15Mar2025:17:38:24):  xrun -sv -f mux_4to1_tb.list 
+s29(15Mar2025:17:51:54):  xrun -sv -f mux_4to1_tb.list 
+s30(15Mar2025:17:52:04):  xrun -sv -f mux_4to1_tb.list 
+s31(15Mar2025:17:54:54):  xrun -sv -f mux_4to1_tb.list 
+s32(15Mar2025:17:59:04):  xrun -sv -f mux_4to1_tb.list 
+s33(15Mar2025:17:59:56):  xrun -sv -f mux_4to1_tb.list 
+s34(18Mar2025:23:39:40):  xrun -sv -f mux_4to1_tb.list 

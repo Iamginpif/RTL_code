@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(14Mar2025:23:13:46):( xrun -hal -sv -f ic74138.list )
+s2::(14Mar2025:23:21:37):( xrun -hal -sv -f ic74138.list )
+s3::(15Mar2025:16:20:57):( xrun -sv -f ic74138_tb.list )
+s4::(15Mar2025:16:21:37):( xrun -sv -f ic74138_tb.list )
+s5::(15Mar2025:17:00:57):( xrun -sv -f ic74138_tb.list )

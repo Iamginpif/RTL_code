@@ -1,0 +1,347 @@
+hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/RISC/code/DEMUX/demux_1to4/3.3_sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
+hal: Snapshot:  worklib.demux_1to4:sv.
+hal: Workspace: /home/gin/RISC/code/DEMUX/demux_1to4/3.3_sim.
+hal: Date: Wed Mar 19 00:38:47 +07 2025.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *M,_SCOPE: demux_1to4
+halcheck: *W,BITUNS (../1.3_src/demux_1to4.sv,10|0): Not all bits of constant '4'b0' are explicitly specified.
+halcheck: (../1.3_src/demux_1to4.sv,10): Constant extended by 3 bits to -> 4'b(000)0.
+halcheck: *W,BITUNS (../1.3_src/demux_1to4.sv,18|0): Not all bits of constant '4'b0' are explicitly specified.
+halcheck: (../1.3_src/demux_1to4.sv,18): Constant extended by 3 bits to -> 4'b(000)0.
+halcheck: *N,PRTCNT (../1.3_src/demux_1to4.sv,1|0): Module/Entity 'demux_1to4' contains '4' ports.
+halcheck: (../1.3_src/demux_1to4.sv,1): Number of Input ports: 3.
+halcheck: (../1.3_src/demux_1to4.sv,1): Number of Output ports: 1.
+halcheck: *W,STYVAL (../1.3_src/demux_1to4.sv,4|0): Numeric value '1' used for identifier 'sel_i'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.3_src/demux_1to4.sv,6|0): Numeric value '3' used for identifier 'out_o'. Use constants to avoid portability issues.
+halcheck: *W,NOBLKN (../1.3_src/demux_1to4.sv,8|0): Each block should be labeled with a meaningful name.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 5.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: *M,_SCOPE: demux_1to4
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: demux_1to4
+halstruct: *W,TPOUNR (../1.3_src/demux_1to4.sv,18|0): Output 'out_o[0]' of top-level module is not a register.
+@:out_o[0] 
+@:out_o[0] 
+halstruct: *W,TPOUNR (../1.3_src/demux_1to4.sv,18|0): Output 'out_o[1]' of top-level module is not a register.
+@:out_o[1] 
+@:out_o[1] 
+halstruct: *W,TPOUNR (../1.3_src/demux_1to4.sv,18|0): Output 'out_o[2]' of top-level module is not a register.
+@:out_o[2] 
+@:out_o[2] 
+halstruct: *W,TPOUNR (../1.3_src/demux_1to4.sv,18|0): Output 'out_o[3]' of top-level module is not a register.
+@:out_o[3] 
+@:out_o[3] 
+halstruct: *W,IOCOMB (../1.3_src/demux_1to4.sv,1|0): Combinational path detected between top-level input 'demux_1to4.data_i' and top-level output 'demux_1to4.out_o[0]'.
+halstruct: *W,IOCOMB (../1.3_src/demux_1to4.sv,1|0): Combinational path detected between top-level input 'demux_1to4.data_i' and top-level output 'demux_1to4.out_o[1]'.
+halstruct: *W,IOCOMB (../1.3_src/demux_1to4.sv,1|0): Combinational path detected between top-level input 'demux_1to4.data_i' and top-level output 'demux_1to4.out_o[2]'.
+halstruct: *W,IOCOMB (../1.3_src/demux_1to4.sv,1|0): Combinational path detected between top-level input 'demux_1to4.data_i' and top-level output 'demux_1to4.out_o[3]'.
+halstruct: *N,NUMDFF (../1.3_src/demux_1to4.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 8.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+~:FFSRST
+^:FFSRST
+~:SGUNDV
+^:SGUNDV
+~:FFWASR
+^:FFWASR
+~:FFWNSR
+^:FFWNSR
+~:FFASRT
+^:FFASRT
+~:LCNSTD
+^:LCNSTD
+~:FFCSTD
+^:FFCSTD
+~:GENTOP
+^:GENTOP
+~:LTCHNT
+^:LTCHNT
+~:MLTDIO
+^:MLTDIO
+~:SYNASN
+^:SYNASN
+~:MULRST
+^:MULRST
+~:MCKDMN
+^:MCKDMN
+~:CLKGNP
+^:CLKGNP
+~:RSTGNP
+^:RSTGNP
+~:TSBINF
+^:TSBINF
+~:RTCDAT
+^:RTCDAT
+~:LENCPC
+^:LENCPC
+hal: *M,_SCOPE: __dummy_top

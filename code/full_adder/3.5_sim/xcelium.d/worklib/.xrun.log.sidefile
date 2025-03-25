@@ -1,0 +1,339 @@
+hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/RISC/code/full_adder/3.5_sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
+hal: Snapshot:  worklib.add_subtract:sv.
+hal: Workspace: /home/gin/RISC/code/full_adder/3.5_sim.
+hal: Date: Fri Mar 21 17:02:21 +07 2025.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *M,_SCOPE: add_subtract
+halcheck: *N,PRTCNT (../1.5_src/add_subtract.sv,1|0): Module/Entity 'add_subtract' contains '5' ports.
+halcheck: (../1.5_src/add_subtract.sv,1): Number of Input ports: 3.
+halcheck: (../1.5_src/add_subtract.sv,1): Number of Output ports: 2.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,2|0): Numeric value '31' used for identifier 'a_i'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (../1.5_src/add_subtract.sv,2|0): Use a separate line for each HDL declaration.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,4|0): Numeric value '31' used for identifier 'result_o'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,7|0): Numeric value '31' used for identifier 'b_mod'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,8|0): Numeric value '32' used for identifier 'result'. Use constants to avoid portability issues.
+halcheck: *W,IMPTYP (../1.5_src/add_subtract.sv,11|0): Expression '~b_i + 1' implicitly converted to type 'register' from type 'integer'.
+halcheck: *W,LRGOPR (../1.5_src/add_subtract.sv,11|0): Arithmetic or relational operation performed on large operands in module/design-unit add_subtract.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 6.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: *M,_SCOPE: add_subtract
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: add_subtract
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,17|0): Output 'result_o' of top-level module is not a register.
+@:result_o 
+@:result 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,18|0): Output 'cout_o' of top-level module is not a register.
+@:cout_o 
+@:result 
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.b_i' and top-level output 'add_subtract.result_o'.
+halstruct: *N,NUMDFF (../1.5_src/add_subtract.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 4.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+~:FFSRST
+^:FFSRST
+~:SGUNDV
+^:SGUNDV
+~:FFWASR
+^:FFWASR
+~:FFWNSR
+^:FFWNSR
+~:FFASRT
+^:FFASRT
+~:LCNSTD
+^:LCNSTD
+~:FFCSTD
+^:FFCSTD
+~:GENTOP
+^:GENTOP
+~:LTCHNT
+^:LTCHNT
+~:MLTDIO
+^:MLTDIO
+~:SYNASN
+^:SYNASN
+~:MULRST
+^:MULRST
+~:MCKDMN
+^:MCKDMN
+~:CLKGNP
+^:CLKGNP
+~:RSTGNP
+^:RSTGNP
+~:TSBINF
+^:TSBINF
+~:RTCDAT
+^:RTCDAT
+~:LENCPC
+^:LENCPC
+hal: *M,_SCOPE: __dummy_top
