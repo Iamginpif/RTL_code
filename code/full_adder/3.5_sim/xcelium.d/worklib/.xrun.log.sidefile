@@ -1,22 +1,40 @@
-hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/RISC/code/full_adder/3.5_sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
-hal: Snapshot:  worklib.add_subtract:sv.
-hal: Workspace: /home/gin/RISC/code/full_adder/3.5_sim.
-hal: Date: Fri Mar 21 17:02:21 +07 2025.
+hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/Github/RTL_code/code/full_adder/3.5_sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
+hal: Snapshot:  worklib.full_adder_32bit:sv.
+hal: Workspace: /home/gin/Github/RTL_code/code/full_adder/3.5_sim.
+hal: Date: Wed Mar 26 19:11:30 +07 2025.
 hal: Running on elaborated SNAPSHOT.....
 hal: *M,_SCOPE: __dummy_top
-halcheck: *M,_SCOPE: add_subtract
-halcheck: *N,PRTCNT (../1.5_src/add_subtract.sv,1|0): Module/Entity 'add_subtract' contains '5' ports.
-halcheck: (../1.5_src/add_subtract.sv,1): Number of Input ports: 3.
-halcheck: (../1.5_src/add_subtract.sv,1): Number of Output ports: 2.
-halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,2|0): Numeric value '31' used for identifier 'a_i'. Use constants to avoid portability issues.
-halcheck: *N,DECLIN (../1.5_src/add_subtract.sv,2|0): Use a separate line for each HDL declaration.
-halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,4|0): Numeric value '31' used for identifier 'result_o'. Use constants to avoid portability issues.
-halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,7|0): Numeric value '31' used for identifier 'b_mod'. Use constants to avoid portability issues.
-halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,8|0): Numeric value '32' used for identifier 'result'. Use constants to avoid portability issues.
-halcheck: *W,IMPTYP (../1.5_src/add_subtract.sv,11|0): Expression '~b_i + 1' implicitly converted to type 'register' from type 'integer'.
-halcheck: *W,LRGOPR (../1.5_src/add_subtract.sv,11|0): Arithmetic or relational operation performed on large operands in module/design-unit add_subtract.
+halcheck: *M,_SCOPE: full_adder_32bit
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,2|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,3|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,4|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,6|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,7|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,8|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,10|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,11|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,12|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,21|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,22|0): HDL source line contains one or more control characters.
+halcheck: *N,PRTCNT (../1.5_src/full_adder_32bit.sv,1|0): Module/Entity 'full_adder_32bit' contains '5' ports.
+halcheck: (../1.5_src/full_adder_32bit.sv,1): Number of Input ports: 3.
+halcheck: (../1.5_src/full_adder_32bit.sv,1): Number of Output ports: 2.
+halcheck: *N,DECLIN (../1.5_src/full_adder_32bit.sv,3|0): Use a separate line for each HDL declaration.
+halcheck: *N,DECLIN (../1.5_src/full_adder_32bit.sv,4|0): Use a separate line for each HDL declaration.
+halcheck: *N,IDLENG (../1.5_src/full_adder_32bit.sv,2|0): Identifier name 'N' is not of appropriate length (4 to 16 characters).
+halcheck: *W,PRMVAL (../1.5_src/full_adder_32bit.sv,2|0): Bit width not specified for parameter 'N'.
+halcheck: *W,PRMBSE (../1.5_src/full_adder_32bit.sv,2|0): Base not specified for parameter 'N'.
+halcheck: *W,UNMGEN (../1.5_src/full_adder_32bit.sv,12|0): Unnamed generate block found in module 'full_adder_32bit'.
+halcheck: *N,IDLENG (../1.5_src/full_adder_32bit.sv,13|0): Identifier name 'u0' is not of appropriate length (4 to 16 characters).
+halcheck: *M,_SCOPE: full_adder_32bit.genblk1[0].u0
+halcheck: *N,PRTCNT (../1.5_src/full_adder.sv,1|0): Module/Entity 'full_adder' contains '5' ports.
+halcheck: (../1.5_src/full_adder.sv,1): Number of Input ports: 3.
+halcheck: (../1.5_src/full_adder.sv,1): Number of Output ports: 2.
+halcheck: *N,DECLIN (../1.5_src/full_adder.sv,3|0): Use a separate line for each HDL declaration.
+halcheck: *N,DECLIN (../1.5_src/full_adder.sv,5|0): Use a separate line for each HDL declaration.
+halcheck: *M,_SCOPE: full_adder_32bit
 halcheck: Total errors   = 0.
-halcheck: Total warnings = 6.
+halcheck: Total warnings = 14.
 hal: *M,_SCOPE: __dummy_top
 halsynth: Loading design snapshot....
 halsynth: Traversing design hierarchy....
@@ -27,23 +45,403 @@ halsynth: Traversing design hierarchy....
 ~:MUDREG
 ~:MULWIR
 ~:UNDRIV
-halsynth: *M,_SCOPE: add_subtract
+halsynth: *M,_SCOPE: full_adder_32bit
 halsynth: Total errors   = 0.
 halsynth: Total warnings = 0.
 hal: *M,_SCOPE: __dummy_top
-halstruct: *M,_SCOPE: add_subtract
-halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,17|0): Output 'result_o' of top-level module is not a register.
-@:result_o 
-@:result 
-halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,18|0): Output 'cout_o' of top-level module is not a register.
-@:cout_o 
-@:result 
-halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i' and top-level output 'add_subtract.result_o'.
-halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.b_i' and top-level output 'add_subtract.result_o'.
-halstruct: *N,NUMDFF (../1.5_src/add_subtract.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: *M,_SCOPE: full_adder_32bit
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[0]' of top-level module is not a register.
+@:sum[0] 
+@:genblk1[0].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[1]' of top-level module is not a register.
+@:sum[1] 
+@:genblk1[1].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[2]' of top-level module is not a register.
+@:sum[2] 
+@:genblk1[2].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[3]' of top-level module is not a register.
+@:sum[3] 
+@:genblk1[3].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[4]' of top-level module is not a register.
+@:sum[4] 
+@:genblk1[4].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[5]' of top-level module is not a register.
+@:sum[5] 
+@:genblk1[5].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[6]' of top-level module is not a register.
+@:sum[6] 
+@:genblk1[6].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[7]' of top-level module is not a register.
+@:sum[7] 
+@:genblk1[7].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[8]' of top-level module is not a register.
+@:sum[8] 
+@:genblk1[8].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[9]' of top-level module is not a register.
+@:sum[9] 
+@:genblk1[9].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[10]' of top-level module is not a register.
+@:sum[10] 
+@:genblk1[10].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[11]' of top-level module is not a register.
+@:sum[11] 
+@:genblk1[11].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[12]' of top-level module is not a register.
+@:sum[12] 
+@:genblk1[12].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[13]' of top-level module is not a register.
+@:sum[13] 
+@:genblk1[13].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[14]' of top-level module is not a register.
+@:sum[14] 
+@:genblk1[14].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[15]' of top-level module is not a register.
+@:sum[15] 
+@:genblk1[15].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[16]' of top-level module is not a register.
+@:sum[16] 
+@:genblk1[16].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[17]' of top-level module is not a register.
+@:sum[17] 
+@:genblk1[17].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[18]' of top-level module is not a register.
+@:sum[18] 
+@:genblk1[18].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[19]' of top-level module is not a register.
+@:sum[19] 
+@:genblk1[19].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[20]' of top-level module is not a register.
+@:sum[20] 
+@:genblk1[20].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[21]' of top-level module is not a register.
+@:sum[21] 
+@:genblk1[21].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[22]' of top-level module is not a register.
+@:sum[22] 
+@:genblk1[22].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[23]' of top-level module is not a register.
+@:sum[23] 
+@:genblk1[23].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[24]' of top-level module is not a register.
+@:sum[24] 
+@:genblk1[24].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[25]' of top-level module is not a register.
+@:sum[25] 
+@:genblk1[25].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[26]' of top-level module is not a register.
+@:sum[26] 
+@:genblk1[26].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[27]' of top-level module is not a register.
+@:sum[27] 
+@:genblk1[27].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[28]' of top-level module is not a register.
+@:sum[28] 
+@:genblk1[28].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[29]' of top-level module is not a register.
+@:sum[29] 
+@:genblk1[29].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[30]' of top-level module is not a register.
+@:sum[30] 
+@:genblk1[30].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[31]' of top-level module is not a register.
+@:sum[31] 
+@:genblk1[31].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[0]' of top-level module is not a register.
+@:cout[0] 
+@:genblk1[0].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[1]' of top-level module is not a register.
+@:cout[1] 
+@:genblk1[1].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[2]' of top-level module is not a register.
+@:cout[2] 
+@:genblk1[2].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[3]' of top-level module is not a register.
+@:cout[3] 
+@:genblk1[3].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[4]' of top-level module is not a register.
+@:cout[4] 
+@:genblk1[4].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[5]' of top-level module is not a register.
+@:cout[5] 
+@:genblk1[5].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[6]' of top-level module is not a register.
+@:cout[6] 
+@:genblk1[6].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[7]' of top-level module is not a register.
+@:cout[7] 
+@:genblk1[7].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[8]' of top-level module is not a register.
+@:cout[8] 
+@:genblk1[8].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[9]' of top-level module is not a register.
+@:cout[9] 
+@:genblk1[9].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[10]' of top-level module is not a register.
+@:cout[10] 
+@:genblk1[10].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[11]' of top-level module is not a register.
+@:cout[11] 
+@:genblk1[11].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[12]' of top-level module is not a register.
+@:cout[12] 
+@:genblk1[12].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[13]' of top-level module is not a register.
+@:cout[13] 
+@:genblk1[13].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[14]' of top-level module is not a register.
+@:cout[14] 
+@:genblk1[14].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[15]' of top-level module is not a register.
+@:cout[15] 
+@:genblk1[15].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[16]' of top-level module is not a register.
+@:cout[16] 
+@:genblk1[16].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[17]' of top-level module is not a register.
+@:cout[17] 
+@:genblk1[17].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[18]' of top-level module is not a register.
+@:cout[18] 
+@:genblk1[18].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[19]' of top-level module is not a register.
+@:cout[19] 
+@:genblk1[19].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[20]' of top-level module is not a register.
+@:cout[20] 
+@:genblk1[20].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[21]' of top-level module is not a register.
+@:cout[21] 
+@:genblk1[21].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[22]' of top-level module is not a register.
+@:cout[22] 
+@:genblk1[22].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[23]' of top-level module is not a register.
+@:cout[23] 
+@:genblk1[23].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[24]' of top-level module is not a register.
+@:cout[24] 
+@:genblk1[24].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[25]' of top-level module is not a register.
+@:cout[25] 
+@:genblk1[25].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[26]' of top-level module is not a register.
+@:cout[26] 
+@:genblk1[26].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[27]' of top-level module is not a register.
+@:cout[27] 
+@:genblk1[27].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[28]' of top-level module is not a register.
+@:cout[28] 
+@:genblk1[28].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[29]' of top-level module is not a register.
+@:cout[29] 
+@:genblk1[29].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[30]' of top-level module is not a register.
+@:cout[30] 
+@:genblk1[30].u0 
+halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[31]' of top-level module is not a register.
+@:cout[31] 
+@:genblk1[31].u0 
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[0]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[0]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[0]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[1]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[1]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[1]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[2]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[2]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[2]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[3]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[3]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[3]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[4]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[4]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[4]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[5]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[5]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[5]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[6]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[6]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[6]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[7]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[7]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[7]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[8]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[8]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[8]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[9]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[9]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[9]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[10]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[10]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[10]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[11]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[11]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[11]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[12]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[12]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[12]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[13]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[13]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[13]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[14]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[14]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[14]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[15]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[15]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[15]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[16]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[16]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[16]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[17]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[17]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[17]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[18]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[18]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[18]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[19]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[19]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[19]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[20]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[20]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[20]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[21]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[21]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[21]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[22]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[22]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[22]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[23]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[23]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[23]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[24]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[24]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[24]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[25]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[25]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[25]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[26]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[26]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[26]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[27]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[27]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[27]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[28]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[28]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[28]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[29]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[29]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[29]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[30]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[30]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[30]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[31]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[31]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[31]' and top-level output 'full_adder_32bit.sum'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[0]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[0]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[0]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[1]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[1]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[1]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[2]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[2]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[2]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[3]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[3]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[3]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[4]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[4]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[4]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[5]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[5]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[5]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[6]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[6]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[6]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[7]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[7]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[7]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[8]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[8]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[8]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[9]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[9]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[9]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[10]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[10]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[10]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[11]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[11]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[11]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[12]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[12]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[12]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[13]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[13]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[13]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[14]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[14]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[14]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[15]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[15]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[15]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[16]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[16]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[16]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[17]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[17]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[17]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[18]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[18]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[18]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[19]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[19]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[19]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[20]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[20]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[20]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[21]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[21]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[21]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[22]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[22]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[22]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[23]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[23]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[23]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[24]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[24]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[24]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[25]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[25]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[25]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[26]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[26]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[26]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[27]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[27]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[27]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[28]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[28]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[28]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[29]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[29]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[29]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[30]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[30]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[30]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[31]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[31]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[31]' and top-level output 'full_adder_32bit.cout'.
+halstruct: *M,_SCOPE: full_adder_32bit.genblk1[0].u0
+halstruct: *W,SYNPRT (../1.5_src/full_adder.sv,8|0): Output port 'sum_o' is assigned asynchronously.
+halstruct: *W,SYNPRT (../1.5_src/full_adder.sv,7|0): Output port 'cout_o' is assigned asynchronously.
+halstruct: *M,_SCOPE: full_adder_32bit.genblk1[31].u0
+halstruct: *N,NUMDFF (../1.5_src/full_adder_32bit.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
 halstruct: Design facts generated in 'hal.design_facts'.
 halstruct: Total errors   = 0.
-halstruct: Total warnings = 4.
+halstruct: Total warnings = 258.
 ~:DSCNCK
 ^:DSCNCK
 ~:SLENEX

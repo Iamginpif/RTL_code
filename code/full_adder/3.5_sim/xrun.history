@@ -30,3 +30,31 @@ s29(21Mar2025:17:48:55):  xrun -sv -f add_subtract_tb.list
 s30(21Mar2025:17:49:01):  xrun -sv -f add_subtract_tb.list 
 s31(21Mar2025:17:49:27):  xrun -sv -f add_subtract_tb.list 
 s32(21Mar2025:17:50:53):  xrun -sv -f add_subtract_tb.list 
+s33(26Mar2025:18:57:21):  xrun -hal -sv -f add_subtract.list 
+s34(26Mar2025:18:58:35):  xrun -hal -sv -f full_adder_32bit.list 
+s35(26Mar2025:18:59:20):  xrun -hal -sv -f full_adder_32bit.list 
+s36(26Mar2025:18:59:43):  xrun -hal -sv -f full_adder_32bit.list 
+s37(26Mar2025:19:03:40):  xrun -hal -sv -f full_adder_32bit.list 
+s38(26Mar2025:19:03:53):  xrun -hal -sv -f full_adder_32bit.list 
+s39(26Mar2025:19:04:38):  xrun -hal -sv -f full_adder.list 
+s40(26Mar2025:19:05:07):  xrun -hal -sv -f add_subtract.list 
+s41(26Mar2025:19:07:17):  xrun -hal -sv -f full_adder_32bit.list 
+s42(26Mar2025:19:10:45):  xrun -hal -sv -f full_adder_32bit.list 
+s43(26Mar2025:19:11:04):  xrun -hal -sv -f full_adder_32bit.list 
+s44(26Mar2025:19:11:30):  xrun -hal -sv -f full_adder_32bit.list 
+s45(26Mar2025:19:20:22):  xrun -sv -f full_adder_32bit_tb.list 
+s46(26Mar2025:19:31:02):  xrun -sv -f full_adder_32bit_tb.list 
+s47(26Mar2025:19:31:20):  xrun -sv -f full_adder_32bit_tb.list 
+s48(26Mar2025:19:32:22):  xrun -sv -f full_adder_32bit_tb.list 
+s49(26Mar2025:19:52:44):  xrun -sv -f full_adder_32bit_tb.list 
+s50(26Mar2025:19:54:21):  xrun -sv -f full_adder_32bit_tb.list 
+s51(26Mar2025:19:58:43):  xrun -sv -f full_adder_32bit_tb.list 
+s52(26Mar2025:20:02:14):  xrun -sv -f full_adder_32bit_tb.list 
+s53(26Mar2025:20:02:28):  xrun -sv -f full_adder_32bit_tb.list 
+s54(26Mar2025:20:02:52):  xrun -sv -f full_adder_32bit_tb.list 
+s55(26Mar2025:20:04:19):  xrun -sv -f full_adder_32bit_tb.list 
+s56(26Mar2025:20:09:42):  xrun -sv -f full_adder_32bit_tb.list 
+s57(26Mar2025:20:14:22):  xrun -sv -f full_adder_32bit_tb.list 
+s58(26Mar2025:20:16:40):  xrun -sv -f full_adder_32bit_tb.list 
+s59(26Mar2025:22:41:47):  xrun -sv -f full_adder_32bit_tb.list 
+s60(26Mar2025:22:45:22):  xrun -sv -f full_adder_32bit_tb.list 

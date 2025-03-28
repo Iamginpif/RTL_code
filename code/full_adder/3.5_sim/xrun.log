@@ -1,49 +1,53 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Mar 21, 2025 at 17:50:52 +07
+TOOL:	xrun(64)	20.09-s001: Started on Mar 26, 2025 at 22:45:22 +07
 xrun
 	-sv
-	-f add_subtract_tb.list
-		../1.5_src/add_subtract.sv
-		../2.5_tb/add_subtract_tb.sv
-Recompiling... reason: file '../2.5_tb/add_subtract_tb.sv' is newer than expected.
-	expected: Fri Mar 21 17:49:25 2025
-	actual:   Fri Mar 21 17:50:51 2025
-file: ../2.5_tb/add_subtract_tb.sv
-	module worklib.add_subtract_tb:sv
+	-f full_adder_32bit_tb.list
+		../1.5_src/full_adder_32bit.sv
+		../2.5_tb/full_adder_32bit_tb.sv
+Recompiling... reason: file '../2.5_tb/full_adder_32bit_tb.sv' is newer than expected.
+	expected: Wed Mar 26 20:17:20 2025
+	actual:   Wed Mar 26 22:45:19 2025
+file: ../2.5_tb/full_adder_32bit_tb.sv
+	module worklib.full_adder_32bit_tb:sv
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		add_subtract_tb
+		full_adder_32bit_tb
+		Caching library 'worklib' ....... Done
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.add_subtract_tb:sv <0x6e533ff6>
-			streams:   6, words:  8152
+		worklib.full_adder_32bit_tb:sv <0x1b24c122>
+			streams:   6, words:  8499
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		              Instances  Unique
-		Modules:              2       2
-		Registers:           13      13
-		Scalar wires:         3       -
-		Vectored wires:       6       -
+		Modules:             34       3
+		Registers:           11      11
+		Scalar wires:        68       -
+		Expanded wires:      96       3
 		Initial blocks:       1       1
-		Cont. assignments:    4       4
+		Cont. assignments:    0       4
 		Pseudo assignments:   5       5
-	Writing initial simulation snapshot: worklib.add_subtract_tb:sv
-Loading snapshot worklib.add_subtract_tb:sv .................... Done
+	Writing initial simulation snapshot: worklib.full_adder_32bit_tb:sv
+Loading snapshot worklib.full_adder_32bit_tb:sv .................... Done
 xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 xcelium> source /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc
 xcelium> run
-Testcase # 1 PASSED:| a =          1| b =          1| c_in = 0| result_expected =          2| result_got =          2| cout_expected = 0| cout_got = 0
-Testcase # 2 PASSED:| a =      12345| b =       6789| c_in = 0| result_expected =      19134| result_got =      19134| cout_expected = 0| cout_got = 0
-Testcase # 3 PASSED:| a = 4294967295| b =          1| c_in = 0| result_expected =          0| result_got =          0| cout_expected = 1| cout_got = 1
-Testcase # 4 PASSED:| a =         10| b =          9| c_in = 1| result_expected =          1| result_got =          1| cout_expected = 0| cout_got = 0
-Testcase # 5 PASSED:| a =     192837| b =     987654| c_in = 1| result_expected = 4294172479| result_got = 4294172479| cout_expected = 1| cout_got = 1
-Testcase # 6 PASSED:| a =          1| b =          1| c_in = 1| result_expected =          0| result_got =          0| cout_expected = 0| cout_got = 0
-Testcase # 7 FAILED:| a =          1| b =          1| c_in = 1| result_expected =          0| result_got =          0| cout_expected = 1| cout_got = 0
-Simulation complete via $finish(1) at time 70 NS + 0
-../2.5_tb/add_subtract_tb.sv:66   $finish;
+Testcase # 1 PASSED:| a = 00000000| b = 00000000| c_in = 0| sum_expected = 00000000| sum_got = 00000000| cout_expected = 0| cout_got = 0
+Testcase # 2 FAILED:| a = 00000001| b = 00000001| c_in = 0| sum_expected = 00000002| sum_got = 00000000| cout_expected = 0| cout_got = 0
+Testcase # 3 FAILED:| a = 0000000f| b = 00000001| c_in = 0| sum_expected = 00000010| sum_got = 0000000e| cout_expected = 0| cout_got = 0
+Testcase # 4 FAILED:| a = fffffff0| b = 00000010| c_in = 0| sum_expected = 00000000| sum_got = ffffffe0| cout_expected = 1| cout_got = 0
+Testcase # 5 FAILED:| a = 7fffffff| b = 00000001| c_in = 0| sum_expected = 80000000| sum_got = 7ffffffe| cout_expected = 1| cout_got = 0
+Testcase # 6 PASSED:| a = 80000000| b = ffffffff| c_in = 0| sum_expected = 7fffffff| sum_got = 7fffffff| cout_expected = 1| cout_got = 0
+Testcase # 7 PASSED:| a = aaaaaaaa| b = 55555555| c_in = 0| sum_expected = ffffffff| sum_got = ffffffff| cout_expected = 0| cout_got = 0
+Testcase # 8 FAILED:| a = 12345678| b = 12345678| c_in = 0| sum_expected = 2468acf0| sum_got = 00000000| cout_expected = 0| cout_got = 0
+Testcase # 9 FAILED:| a = fffffffe| b = 00000002| c_in = 1| sum_expected = 00000001| sum_got = fffffffd| cout_expected = 1| cout_got = 0
+Testcase #10 FAILED:| a = ffffffff| b = 00000001| c_in = 0| sum_expected = 00000000| sum_got = fffffffe| cout_expected = 0| cout_got = 0
+Simulation complete via $finish(1) at time 100 NS + 0
+../2.5_tb/full_adder_32bit_tb.sv:77   $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Mar 21, 2025 at 17:50:53 +07  (total: 00:00:01)
+TOOL:	xrun(64)	20.09-s001: Exiting on Mar 26, 2025 at 22:45:23 +07  (total: 00:00:01)

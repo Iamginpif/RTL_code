@@ -4,4 +4,4 @@
 //
 -sv
 -f
-add_subtract_tb.list
+full_adder_32bit_tb.list

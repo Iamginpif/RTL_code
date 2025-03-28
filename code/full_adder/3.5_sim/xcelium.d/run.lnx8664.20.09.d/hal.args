@@ -7,7 +7,7 @@
 ./xcelium.d/run.lnx8664.20.09.d/cds.lib
 -hdlvar
 ./xcelium.d/run.lnx8664.20.09.d/hdl.var
-worklib.add_subtract:sv
+worklib.full_adder_32bit:sv
 -logfile
 xrun.log
 -cflag
