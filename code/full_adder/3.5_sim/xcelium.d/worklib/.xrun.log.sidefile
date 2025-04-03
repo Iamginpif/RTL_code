@@ -1,40 +1,39 @@
 hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/Github/RTL_code/code/full_adder/3.5_sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
-hal: Snapshot:  worklib.full_adder_32bit:sv.
+hal: Snapshot:  worklib.add_subtract:sv.
 hal: Workspace: /home/gin/Github/RTL_code/code/full_adder/3.5_sim.
-hal: Date: Wed Mar 26 19:11:30 +07 2025.
+hal: Date: Thu Apr 03 23:44:02 +07 2025.
 hal: Running on elaborated SNAPSHOT.....
 hal: *M,_SCOPE: __dummy_top
-halcheck: *M,_SCOPE: full_adder_32bit
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,2|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,3|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,4|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,6|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,7|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,8|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,10|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,11|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,12|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,21|0): HDL source line contains one or more control characters.
-halcheck: *W,CTLCHR (../1.5_src/full_adder_32bit.sv,22|0): HDL source line contains one or more control characters.
-halcheck: *N,PRTCNT (../1.5_src/full_adder_32bit.sv,1|0): Module/Entity 'full_adder_32bit' contains '5' ports.
-halcheck: (../1.5_src/full_adder_32bit.sv,1): Number of Input ports: 3.
-halcheck: (../1.5_src/full_adder_32bit.sv,1): Number of Output ports: 2.
-halcheck: *N,DECLIN (../1.5_src/full_adder_32bit.sv,3|0): Use a separate line for each HDL declaration.
-halcheck: *N,DECLIN (../1.5_src/full_adder_32bit.sv,4|0): Use a separate line for each HDL declaration.
-halcheck: *N,IDLENG (../1.5_src/full_adder_32bit.sv,2|0): Identifier name 'N' is not of appropriate length (4 to 16 characters).
-halcheck: *W,PRMVAL (../1.5_src/full_adder_32bit.sv,2|0): Bit width not specified for parameter 'N'.
-halcheck: *W,PRMBSE (../1.5_src/full_adder_32bit.sv,2|0): Base not specified for parameter 'N'.
-halcheck: *W,UNMGEN (../1.5_src/full_adder_32bit.sv,12|0): Unnamed generate block found in module 'full_adder_32bit'.
-halcheck: *N,IDLENG (../1.5_src/full_adder_32bit.sv,13|0): Identifier name 'u0' is not of appropriate length (4 to 16 characters).
-halcheck: *M,_SCOPE: full_adder_32bit.genblk1[0].u0
+halcheck: *M,_SCOPE: add_subtract
+halcheck: *N,PRTCNT (../1.5_src/add_subtract.sv,1|0): Module/Entity 'add_subtract' contains '5' ports.
+halcheck: (../1.5_src/add_subtract.sv,1): Number of Input ports: 3.
+halcheck: (../1.5_src/add_subtract.sv,1): Number of Output ports: 2.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,3|0): Numeric value '31' used for identifier 'a_i'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (../1.5_src/add_subtract.sv,3|0): Use a separate line for each HDL declaration.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,5|0): Numeric value '31' used for identifier 'result_o'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,8|0): Numeric value '31' used for identifier 'carry'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,9|0): Numeric value '31' used for identifier 'b_mod'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (../1.5_src/add_subtract.sv,10|0): Numeric value '31' used for identifier 'result'. Use constants to avoid portability issues.
+halcheck: *W,IMPTYP (../1.5_src/add_subtract.sv,11|0): Expression '~b_i + 1' implicitly converted to type 'register' from type 'integer'.
+halcheck: *W,LRGOPR (../1.5_src/add_subtract.sv,11|0): Arithmetic or relational operation performed on large operands in module/design-unit add_subtract.
+halcheck: *W,UNMGEN (../1.5_src/add_subtract.sv,22|0): Unnamed generate block found in module 'add_subtract'.
+halcheck: *W,LCVARN (../1.5_src/add_subtract.sv,23|0): Module instance name 'FAi' uses uppercase characters.
+halcheck: *N,IDLENG (../1.5_src/add_subtract.sv,23|0): Identifier name 'FAi' is not of appropriate length (4 to 16 characters).
+halcheck: *M,_SCOPE: add_subtract.genblk1[1].FAi
 halcheck: *N,PRTCNT (../1.5_src/full_adder.sv,1|0): Module/Entity 'full_adder' contains '5' ports.
 halcheck: (../1.5_src/full_adder.sv,1): Number of Input ports: 3.
 halcheck: (../1.5_src/full_adder.sv,1): Number of Output ports: 2.
 halcheck: *N,DECLIN (../1.5_src/full_adder.sv,3|0): Use a separate line for each HDL declaration.
 halcheck: *N,DECLIN (../1.5_src/full_adder.sv,5|0): Use a separate line for each HDL declaration.
-halcheck: *M,_SCOPE: full_adder_32bit
+halcheck: *M,_SCOPE: add_subtract.genblk1[31].FAi
+halcheck: *W,LCVARN (../1.5_src/add_subtract.sv,12|0): Module instance name 'FA320' uses uppercase characters.
+halcheck: *M,_SCOPE: add_subtract
+halcheck: *W,URDWIR (../1.5_src/add_subtract.sv,9|0): Wire 'b_mod[0]' defined in module 'add_subtract' does not drive any object, but is assigned at least once.
+@:b_mod[0] 
+halcheck: *W,URAWIR (../1.5_src/add_subtract.sv,10|0): Wire 'result' defined in module 'add_subtract' is unused (neither read nor assigned).
+@:result 
 halcheck: Total errors   = 0.
-halcheck: Total warnings = 14.
+halcheck: Total warnings = 12.
 hal: *M,_SCOPE: __dummy_top
 halsynth: Loading design snapshot....
 halsynth: Traversing design hierarchy....
@@ -45,403 +44,836 @@ halsynth: Traversing design hierarchy....
 ~:MUDREG
 ~:MULWIR
 ~:UNDRIV
-halsynth: *M,_SCOPE: full_adder_32bit
+halsynth: *M,_SCOPE: add_subtract
 halsynth: Total errors   = 0.
 halsynth: Total warnings = 0.
 hal: *M,_SCOPE: __dummy_top
-halstruct: *M,_SCOPE: full_adder_32bit
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[0]' of top-level module is not a register.
-@:sum[0] 
-@:genblk1[0].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[1]' of top-level module is not a register.
-@:sum[1] 
-@:genblk1[1].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[2]' of top-level module is not a register.
-@:sum[2] 
-@:genblk1[2].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[3]' of top-level module is not a register.
-@:sum[3] 
-@:genblk1[3].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[4]' of top-level module is not a register.
-@:sum[4] 
-@:genblk1[4].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[5]' of top-level module is not a register.
-@:sum[5] 
-@:genblk1[5].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[6]' of top-level module is not a register.
-@:sum[6] 
-@:genblk1[6].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[7]' of top-level module is not a register.
-@:sum[7] 
-@:genblk1[7].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[8]' of top-level module is not a register.
-@:sum[8] 
-@:genblk1[8].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[9]' of top-level module is not a register.
-@:sum[9] 
-@:genblk1[9].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[10]' of top-level module is not a register.
-@:sum[10] 
-@:genblk1[10].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[11]' of top-level module is not a register.
-@:sum[11] 
-@:genblk1[11].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[12]' of top-level module is not a register.
-@:sum[12] 
-@:genblk1[12].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[13]' of top-level module is not a register.
-@:sum[13] 
-@:genblk1[13].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[14]' of top-level module is not a register.
-@:sum[14] 
-@:genblk1[14].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[15]' of top-level module is not a register.
-@:sum[15] 
-@:genblk1[15].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[16]' of top-level module is not a register.
-@:sum[16] 
-@:genblk1[16].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[17]' of top-level module is not a register.
-@:sum[17] 
-@:genblk1[17].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[18]' of top-level module is not a register.
-@:sum[18] 
-@:genblk1[18].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[19]' of top-level module is not a register.
-@:sum[19] 
-@:genblk1[19].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[20]' of top-level module is not a register.
-@:sum[20] 
-@:genblk1[20].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[21]' of top-level module is not a register.
-@:sum[21] 
-@:genblk1[21].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[22]' of top-level module is not a register.
-@:sum[22] 
-@:genblk1[22].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[23]' of top-level module is not a register.
-@:sum[23] 
-@:genblk1[23].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[24]' of top-level module is not a register.
-@:sum[24] 
-@:genblk1[24].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[25]' of top-level module is not a register.
-@:sum[25] 
-@:genblk1[25].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[26]' of top-level module is not a register.
-@:sum[26] 
-@:genblk1[26].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[27]' of top-level module is not a register.
-@:sum[27] 
-@:genblk1[27].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[28]' of top-level module is not a register.
-@:sum[28] 
-@:genblk1[28].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[29]' of top-level module is not a register.
-@:sum[29] 
-@:genblk1[29].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[30]' of top-level module is not a register.
-@:sum[30] 
-@:genblk1[30].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'sum[31]' of top-level module is not a register.
-@:sum[31] 
-@:genblk1[31].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[0]' of top-level module is not a register.
-@:cout[0] 
-@:genblk1[0].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[1]' of top-level module is not a register.
-@:cout[1] 
-@:genblk1[1].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[2]' of top-level module is not a register.
-@:cout[2] 
-@:genblk1[2].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[3]' of top-level module is not a register.
-@:cout[3] 
-@:genblk1[3].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[4]' of top-level module is not a register.
-@:cout[4] 
-@:genblk1[4].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[5]' of top-level module is not a register.
-@:cout[5] 
-@:genblk1[5].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[6]' of top-level module is not a register.
-@:cout[6] 
-@:genblk1[6].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[7]' of top-level module is not a register.
-@:cout[7] 
-@:genblk1[7].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[8]' of top-level module is not a register.
-@:cout[8] 
-@:genblk1[8].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[9]' of top-level module is not a register.
-@:cout[9] 
-@:genblk1[9].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[10]' of top-level module is not a register.
-@:cout[10] 
-@:genblk1[10].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[11]' of top-level module is not a register.
-@:cout[11] 
-@:genblk1[11].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[12]' of top-level module is not a register.
-@:cout[12] 
-@:genblk1[12].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[13]' of top-level module is not a register.
-@:cout[13] 
-@:genblk1[13].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[14]' of top-level module is not a register.
-@:cout[14] 
-@:genblk1[14].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[15]' of top-level module is not a register.
-@:cout[15] 
-@:genblk1[15].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[16]' of top-level module is not a register.
-@:cout[16] 
-@:genblk1[16].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[17]' of top-level module is not a register.
-@:cout[17] 
-@:genblk1[17].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[18]' of top-level module is not a register.
-@:cout[18] 
-@:genblk1[18].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[19]' of top-level module is not a register.
-@:cout[19] 
-@:genblk1[19].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[20]' of top-level module is not a register.
-@:cout[20] 
-@:genblk1[20].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[21]' of top-level module is not a register.
-@:cout[21] 
-@:genblk1[21].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[22]' of top-level module is not a register.
-@:cout[22] 
-@:genblk1[22].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[23]' of top-level module is not a register.
-@:cout[23] 
-@:genblk1[23].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[24]' of top-level module is not a register.
-@:cout[24] 
-@:genblk1[24].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[25]' of top-level module is not a register.
-@:cout[25] 
-@:genblk1[25].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[26]' of top-level module is not a register.
-@:cout[26] 
-@:genblk1[26].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[27]' of top-level module is not a register.
-@:cout[27] 
-@:genblk1[27].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[28]' of top-level module is not a register.
-@:cout[28] 
-@:genblk1[28].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[29]' of top-level module is not a register.
-@:cout[29] 
-@:genblk1[29].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[30]' of top-level module is not a register.
-@:cout[30] 
-@:genblk1[30].u0 
-halstruct: *W,TPOUNR (../1.5_src/full_adder_32bit.sv,13|0): Output 'cout[31]' of top-level module is not a register.
-@:cout[31] 
-@:genblk1[31].u0 
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[0]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[0]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[0]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[1]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[1]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[1]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[2]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[2]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[2]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[3]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[3]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[3]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[4]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[4]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[4]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[5]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[5]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[5]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[6]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[6]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[6]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[7]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[7]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[7]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[8]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[8]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[8]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[9]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[9]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[9]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[10]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[10]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[10]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[11]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[11]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[11]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[12]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[12]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[12]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[13]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[13]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[13]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[14]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[14]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[14]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[15]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[15]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[15]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[16]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[16]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[16]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[17]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[17]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[17]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[18]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[18]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[18]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[19]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[19]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[19]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[20]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[20]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[20]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[21]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[21]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[21]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[22]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[22]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[22]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[23]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[23]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[23]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[24]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[24]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[24]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[25]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[25]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[25]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[26]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[26]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[26]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[27]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[27]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[27]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[28]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[28]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[28]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[29]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[29]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[29]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[30]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[30]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[30]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[31]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[31]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[31]' and top-level output 'full_adder_32bit.sum'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[0]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[0]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[0]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[1]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[1]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[1]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[2]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[2]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[2]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[3]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[3]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[3]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[4]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[4]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[4]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[5]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[5]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[5]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[6]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[6]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[6]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[7]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[7]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[7]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[8]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[8]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[8]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[9]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[9]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[9]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[10]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[10]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[10]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[11]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[11]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[11]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[12]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[12]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[12]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[13]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[13]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[13]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[14]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[14]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[14]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[15]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[15]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[15]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[16]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[16]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[16]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[17]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[17]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[17]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[18]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[18]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[18]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[19]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[19]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[19]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[20]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[20]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[20]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[21]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[21]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[21]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[22]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[22]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[22]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[23]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[23]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[23]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[24]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[24]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[24]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[25]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[25]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[25]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[26]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[26]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[26]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[27]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[27]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[27]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[28]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[28]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[28]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[29]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[29]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[29]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[30]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[30]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[30]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.a[31]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.b[31]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *W,IOCOMB (../1.5_src/full_adder_32bit.sv,1|0): Combinational path detected between top-level input 'full_adder_32bit.c[31]' and top-level output 'full_adder_32bit.cout'.
-halstruct: *M,_SCOPE: full_adder_32bit.genblk1[0].u0
+halstruct: *M,_SCOPE: add_subtract
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,12|0): Output 'result_o[0]' of top-level module is not a register.
+@:result_o[0] 
+@:FA320 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[1]' of top-level module is not a register.
+@:result_o[1] 
+@:genblk1[1].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[1]'.
+@:result_o[1] 
+@:sum_o add_subtract.genblk1[1].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[1].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[1].FAi
+@:b_i add_subtract.genblk1[1].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[1].FAi' drives 'result_o[1]'.
+@:result_o[1] 
+@:result_o[1] 
+@:result_o[1] 
+@:sum_o add_subtract.genblk1[1].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[1].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[1].FAi
+@:b_i add_subtract.genblk1[1].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[1].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[2]' of top-level module is not a register.
+@:result_o[2] 
+@:genblk1[2].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[2]'.
+@:result_o[2] 
+@:sum_o add_subtract.genblk1[2].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[2].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[2].FAi
+@:b_i add_subtract.genblk1[2].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[2].FAi' drives 'result_o[2]'.
+@:result_o[2] 
+@:result_o[2] 
+@:result_o[2] 
+@:sum_o add_subtract.genblk1[2].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[2].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[2].FAi
+@:b_i add_subtract.genblk1[2].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[2].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[3]' of top-level module is not a register.
+@:result_o[3] 
+@:genblk1[3].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[3]'.
+@:result_o[3] 
+@:sum_o add_subtract.genblk1[3].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[3].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[3].FAi
+@:b_i add_subtract.genblk1[3].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[3].FAi' drives 'result_o[3]'.
+@:result_o[3] 
+@:result_o[3] 
+@:result_o[3] 
+@:sum_o add_subtract.genblk1[3].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[3].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[3].FAi
+@:b_i add_subtract.genblk1[3].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[3].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[4]' of top-level module is not a register.
+@:result_o[4] 
+@:genblk1[4].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[4]'.
+@:result_o[4] 
+@:sum_o add_subtract.genblk1[4].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[4].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[4].FAi
+@:b_i add_subtract.genblk1[4].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[4].FAi' drives 'result_o[4]'.
+@:result_o[4] 
+@:result_o[4] 
+@:result_o[4] 
+@:sum_o add_subtract.genblk1[4].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[4].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[4].FAi
+@:b_i add_subtract.genblk1[4].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[4].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[5]' of top-level module is not a register.
+@:result_o[5] 
+@:genblk1[5].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[5]'.
+@:result_o[5] 
+@:sum_o add_subtract.genblk1[5].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[5].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[5].FAi
+@:b_i add_subtract.genblk1[5].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[5].FAi' drives 'result_o[5]'.
+@:result_o[5] 
+@:result_o[5] 
+@:result_o[5] 
+@:sum_o add_subtract.genblk1[5].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[5].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[5].FAi
+@:b_i add_subtract.genblk1[5].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[5].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[6]' of top-level module is not a register.
+@:result_o[6] 
+@:genblk1[6].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[6]'.
+@:result_o[6] 
+@:sum_o add_subtract.genblk1[6].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[6].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[6].FAi
+@:b_i add_subtract.genblk1[6].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[6].FAi' drives 'result_o[6]'.
+@:result_o[6] 
+@:result_o[6] 
+@:result_o[6] 
+@:sum_o add_subtract.genblk1[6].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[6].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[6].FAi
+@:b_i add_subtract.genblk1[6].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[6].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[7]' of top-level module is not a register.
+@:result_o[7] 
+@:genblk1[7].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[7]'.
+@:result_o[7] 
+@:sum_o add_subtract.genblk1[7].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[7].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[7].FAi
+@:b_i add_subtract.genblk1[7].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[7].FAi' drives 'result_o[7]'.
+@:result_o[7] 
+@:result_o[7] 
+@:result_o[7] 
+@:sum_o add_subtract.genblk1[7].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[7].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[7].FAi
+@:b_i add_subtract.genblk1[7].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[7].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[8]' of top-level module is not a register.
+@:result_o[8] 
+@:genblk1[8].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[8]'.
+@:result_o[8] 
+@:sum_o add_subtract.genblk1[8].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[8].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[8].FAi
+@:b_i add_subtract.genblk1[8].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[8].FAi' drives 'result_o[8]'.
+@:result_o[8] 
+@:result_o[8] 
+@:result_o[8] 
+@:sum_o add_subtract.genblk1[8].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[8].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[8].FAi
+@:b_i add_subtract.genblk1[8].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[8].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[9]' of top-level module is not a register.
+@:result_o[9] 
+@:genblk1[9].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[9]'.
+@:result_o[9] 
+@:sum_o add_subtract.genblk1[9].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[9].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[9].FAi
+@:b_i add_subtract.genblk1[9].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[9].FAi' drives 'result_o[9]'.
+@:result_o[9] 
+@:result_o[9] 
+@:result_o[9] 
+@:sum_o add_subtract.genblk1[9].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[9].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[9].FAi
+@:b_i add_subtract.genblk1[9].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[9].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[10]' of top-level module is not a register.
+@:result_o[10] 
+@:genblk1[10].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[10]'.
+@:result_o[10] 
+@:sum_o add_subtract.genblk1[10].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[10].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[10].FAi
+@:b_i add_subtract.genblk1[10].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[10].FAi' drives 'result_o[10]'.
+@:result_o[10] 
+@:result_o[10] 
+@:result_o[10] 
+@:sum_o add_subtract.genblk1[10].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[10].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[10].FAi
+@:b_i add_subtract.genblk1[10].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[10].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[11]' of top-level module is not a register.
+@:result_o[11] 
+@:genblk1[11].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[11]'.
+@:result_o[11] 
+@:sum_o add_subtract.genblk1[11].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[11].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[11].FAi
+@:b_i add_subtract.genblk1[11].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[11].FAi' drives 'result_o[11]'.
+@:result_o[11] 
+@:result_o[11] 
+@:result_o[11] 
+@:sum_o add_subtract.genblk1[11].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[11].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[11].FAi
+@:b_i add_subtract.genblk1[11].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[11].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[12]' of top-level module is not a register.
+@:result_o[12] 
+@:genblk1[12].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[12]'.
+@:result_o[12] 
+@:sum_o add_subtract.genblk1[12].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[12].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[12].FAi
+@:b_i add_subtract.genblk1[12].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[12].FAi' drives 'result_o[12]'.
+@:result_o[12] 
+@:result_o[12] 
+@:result_o[12] 
+@:sum_o add_subtract.genblk1[12].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[12].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[12].FAi
+@:b_i add_subtract.genblk1[12].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[12].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[13]' of top-level module is not a register.
+@:result_o[13] 
+@:genblk1[13].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[13]'.
+@:result_o[13] 
+@:sum_o add_subtract.genblk1[13].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[13].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[13].FAi
+@:b_i add_subtract.genblk1[13].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[13].FAi' drives 'result_o[13]'.
+@:result_o[13] 
+@:result_o[13] 
+@:result_o[13] 
+@:sum_o add_subtract.genblk1[13].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[13].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[13].FAi
+@:b_i add_subtract.genblk1[13].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[13].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[14]' of top-level module is not a register.
+@:result_o[14] 
+@:genblk1[14].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[14]'.
+@:result_o[14] 
+@:sum_o add_subtract.genblk1[14].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[14].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[14].FAi
+@:b_i add_subtract.genblk1[14].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[14].FAi' drives 'result_o[14]'.
+@:result_o[14] 
+@:result_o[14] 
+@:result_o[14] 
+@:sum_o add_subtract.genblk1[14].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[14].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[14].FAi
+@:b_i add_subtract.genblk1[14].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[14].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[15]' of top-level module is not a register.
+@:result_o[15] 
+@:genblk1[15].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[15]'.
+@:result_o[15] 
+@:sum_o add_subtract.genblk1[15].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[15].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[15].FAi
+@:b_i add_subtract.genblk1[15].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[15].FAi' drives 'result_o[15]'.
+@:result_o[15] 
+@:result_o[15] 
+@:result_o[15] 
+@:sum_o add_subtract.genblk1[15].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[15].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[15].FAi
+@:b_i add_subtract.genblk1[15].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[15].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[16]' of top-level module is not a register.
+@:result_o[16] 
+@:genblk1[16].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[16]'.
+@:result_o[16] 
+@:sum_o add_subtract.genblk1[16].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[16].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[16].FAi
+@:b_i add_subtract.genblk1[16].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[16].FAi' drives 'result_o[16]'.
+@:result_o[16] 
+@:result_o[16] 
+@:result_o[16] 
+@:sum_o add_subtract.genblk1[16].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[16].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[16].FAi
+@:b_i add_subtract.genblk1[16].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[16].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[17]' of top-level module is not a register.
+@:result_o[17] 
+@:genblk1[17].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[17]'.
+@:result_o[17] 
+@:sum_o add_subtract.genblk1[17].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[17].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[17].FAi
+@:b_i add_subtract.genblk1[17].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[17].FAi' drives 'result_o[17]'.
+@:result_o[17] 
+@:result_o[17] 
+@:result_o[17] 
+@:sum_o add_subtract.genblk1[17].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[17].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[17].FAi
+@:b_i add_subtract.genblk1[17].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[17].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[18]' of top-level module is not a register.
+@:result_o[18] 
+@:genblk1[18].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[18]'.
+@:result_o[18] 
+@:sum_o add_subtract.genblk1[18].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[18].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[18].FAi
+@:b_i add_subtract.genblk1[18].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[18].FAi' drives 'result_o[18]'.
+@:result_o[18] 
+@:result_o[18] 
+@:result_o[18] 
+@:sum_o add_subtract.genblk1[18].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[18].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[18].FAi
+@:b_i add_subtract.genblk1[18].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[18].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[19]' of top-level module is not a register.
+@:result_o[19] 
+@:genblk1[19].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[19]'.
+@:result_o[19] 
+@:sum_o add_subtract.genblk1[19].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[19].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[19].FAi
+@:b_i add_subtract.genblk1[19].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[19].FAi' drives 'result_o[19]'.
+@:result_o[19] 
+@:result_o[19] 
+@:result_o[19] 
+@:sum_o add_subtract.genblk1[19].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[19].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[19].FAi
+@:b_i add_subtract.genblk1[19].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[19].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[20]' of top-level module is not a register.
+@:result_o[20] 
+@:genblk1[20].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[20]'.
+@:result_o[20] 
+@:sum_o add_subtract.genblk1[20].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[20].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[20].FAi
+@:b_i add_subtract.genblk1[20].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[20].FAi' drives 'result_o[20]'.
+@:result_o[20] 
+@:result_o[20] 
+@:result_o[20] 
+@:sum_o add_subtract.genblk1[20].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[20].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[20].FAi
+@:b_i add_subtract.genblk1[20].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[20].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[21]' of top-level module is not a register.
+@:result_o[21] 
+@:genblk1[21].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[21]'.
+@:result_o[21] 
+@:sum_o add_subtract.genblk1[21].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[21].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[21].FAi
+@:b_i add_subtract.genblk1[21].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[21].FAi' drives 'result_o[21]'.
+@:result_o[21] 
+@:result_o[21] 
+@:result_o[21] 
+@:sum_o add_subtract.genblk1[21].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[21].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[21].FAi
+@:b_i add_subtract.genblk1[21].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[21].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[22]' of top-level module is not a register.
+@:result_o[22] 
+@:genblk1[22].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[22]'.
+@:result_o[22] 
+@:sum_o add_subtract.genblk1[22].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[22].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[22].FAi
+@:b_i add_subtract.genblk1[22].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[22].FAi' drives 'result_o[22]'.
+@:result_o[22] 
+@:result_o[22] 
+@:result_o[22] 
+@:sum_o add_subtract.genblk1[22].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[22].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[22].FAi
+@:b_i add_subtract.genblk1[22].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[22].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[23]' of top-level module is not a register.
+@:result_o[23] 
+@:genblk1[23].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[23]'.
+@:result_o[23] 
+@:sum_o add_subtract.genblk1[23].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[23].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[23].FAi
+@:b_i add_subtract.genblk1[23].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[23].FAi' drives 'result_o[23]'.
+@:result_o[23] 
+@:result_o[23] 
+@:result_o[23] 
+@:sum_o add_subtract.genblk1[23].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[23].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[23].FAi
+@:b_i add_subtract.genblk1[23].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[23].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[24]' of top-level module is not a register.
+@:result_o[24] 
+@:genblk1[24].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[24]'.
+@:result_o[24] 
+@:sum_o add_subtract.genblk1[24].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[24].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[24].FAi
+@:b_i add_subtract.genblk1[24].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[24].FAi' drives 'result_o[24]'.
+@:result_o[24] 
+@:result_o[24] 
+@:result_o[24] 
+@:sum_o add_subtract.genblk1[24].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[24].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[24].FAi
+@:b_i add_subtract.genblk1[24].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[24].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[25]' of top-level module is not a register.
+@:result_o[25] 
+@:genblk1[25].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[25]'.
+@:result_o[25] 
+@:sum_o add_subtract.genblk1[25].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[25].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[25].FAi
+@:b_i add_subtract.genblk1[25].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[25].FAi' drives 'result_o[25]'.
+@:result_o[25] 
+@:result_o[25] 
+@:result_o[25] 
+@:sum_o add_subtract.genblk1[25].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[25].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[25].FAi
+@:b_i add_subtract.genblk1[25].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[25].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[26]' of top-level module is not a register.
+@:result_o[26] 
+@:genblk1[26].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[26]'.
+@:result_o[26] 
+@:sum_o add_subtract.genblk1[26].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[26].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[26].FAi
+@:b_i add_subtract.genblk1[26].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[26].FAi' drives 'result_o[26]'.
+@:result_o[26] 
+@:result_o[26] 
+@:result_o[26] 
+@:sum_o add_subtract.genblk1[26].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[26].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[26].FAi
+@:b_i add_subtract.genblk1[26].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[26].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[27]' of top-level module is not a register.
+@:result_o[27] 
+@:genblk1[27].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[27]'.
+@:result_o[27] 
+@:sum_o add_subtract.genblk1[27].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[27].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[27].FAi
+@:b_i add_subtract.genblk1[27].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[27].FAi' drives 'result_o[27]'.
+@:result_o[27] 
+@:result_o[27] 
+@:result_o[27] 
+@:sum_o add_subtract.genblk1[27].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[27].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[27].FAi
+@:b_i add_subtract.genblk1[27].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[27].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[28]' of top-level module is not a register.
+@:result_o[28] 
+@:genblk1[28].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[28]'.
+@:result_o[28] 
+@:sum_o add_subtract.genblk1[28].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[28].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[28].FAi
+@:b_i add_subtract.genblk1[28].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[28].FAi' drives 'result_o[28]'.
+@:result_o[28] 
+@:result_o[28] 
+@:result_o[28] 
+@:sum_o add_subtract.genblk1[28].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[28].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[28].FAi
+@:b_i add_subtract.genblk1[28].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[28].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[29]' of top-level module is not a register.
+@:result_o[29] 
+@:genblk1[29].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[29]'.
+@:result_o[29] 
+@:sum_o add_subtract.genblk1[29].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[29].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[29].FAi
+@:b_i add_subtract.genblk1[29].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[29].FAi' drives 'result_o[29]'.
+@:result_o[29] 
+@:result_o[29] 
+@:result_o[29] 
+@:sum_o add_subtract.genblk1[29].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[29].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[29].FAi
+@:b_i add_subtract.genblk1[29].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[29].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[30]' of top-level module is not a register.
+@:result_o[30] 
+@:genblk1[30].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[30]'.
+@:result_o[30] 
+@:sum_o add_subtract.genblk1[30].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[30].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[30].FAi
+@:b_i add_subtract.genblk1[30].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[30].FAi' drives 'result_o[30]'.
+@:result_o[30] 
+@:result_o[30] 
+@:result_o[30] 
+@:sum_o add_subtract.genblk1[30].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[30].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[30].FAi
+@:b_i add_subtract.genblk1[30].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[30].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,23|0): Output 'result_o[31]' of top-level module is not a register.
+@:result_o[31] 
+@:genblk1[31].FAi 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,23|0): Combinatorial path crossing multiple units drives 'result_o[31]'.
+@:result_o[31] 
+@:sum_o add_subtract.genblk1[31].FAi
+@:$$cpiHT_56_1808 add_subtract.genblk1[31].FAi
+@:$$cpiHT_56_2080 add_subtract.genblk1[31].FAi
+@:b_i add_subtract.genblk1[31].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'sum_o' of instance 'genblk1[31].FAi' drives 'result_o[31]'.
+@:result_o[31] 
+@:result_o[31] 
+@:result_o[31] 
+@:sum_o add_subtract.genblk1[31].FAi
+halstruct: (../1.5_src/full_adder.sv,8): in instance 'add_subtract.genblk1[31].FAi', combinatorial function of input 'b_i' drives 'sum_o'.
+@:sum_o add_subtract.genblk1[31].FAi
+@:b_i add_subtract.genblk1[31].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[31].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,TPOUNR (../1.5_src/add_subtract.sv,34|0): Output 'cout_o' of top-level module is not a register.
+@:cout_o 
+@:cout_o 
+halstruct: *E,CBPAHI (../1.5_src/add_subtract.sv,34|0): Combinatorial path crossing multiple units drives 'cout_o'.
+@:cout_o 
+@:carry[31] 
+@:cout_o add_subtract.genblk1[31].FAi
+@:$$cpiHT_56_1736 add_subtract.genblk1[31].FAi
+@:$$cpiHT_56_2016 add_subtract.genblk1[31].FAi
+@:$$cpiHT_56_2168 add_subtract.genblk1[31].FAi
+@:b_i add_subtract.genblk1[31].FAi
+@:b_mod 
+@:b_mod 
+@:$$cpiHT_2344_10904 
+halstruct: (../1.5_src/add_subtract.sv,34): in instance 'add_subtract', 'carry[31]' drives 'cout_o'.
+@:cout_o 
+@:carry[31] 
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', output 'cout_o' of instance 'genblk1[31].FAi' drives 'carry[31]'.
+@:carry[31] 
+@:carry[31] 
+@:carry[31] 
+@:cout_o add_subtract.genblk1[31].FAi
+halstruct: (../1.5_src/full_adder.sv,7): in instance 'add_subtract.genblk1[31].FAi', combinatorial function of input 'b_i' drives 'cout_o'.
+@:cout_o add_subtract.genblk1[31].FAi
+@:b_i add_subtract.genblk1[31].FAi
+halstruct: (../1.5_src/add_subtract.sv,23): in instance 'add_subtract', 'b_mod' drives input 'b_i' of instance 'genblk1[31].FAi'.
+@:b_mod 
+halstruct: (../1.5_src/add_subtract.sv,11): in instance 'add_subtract', combinatorial function drives 'b_mod'.
+@:b_mod 
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[0]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.b_i[0]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.cin_i' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[1]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.b_i' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[2]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[3]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[4]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[5]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[6]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[7]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[8]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[9]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[10]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[11]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[12]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[13]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[14]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[15]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[16]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[17]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[18]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[19]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[20]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[21]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[22]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[23]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[24]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[25]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[26]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[27]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[28]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[29]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[30]' and top-level output 'add_subtract.result_o'.
+halstruct: *W,IOCOMB (../1.5_src/add_subtract.sv,1|0): Combinational path detected between top-level input 'add_subtract.a_i[31]' and top-level output 'add_subtract.result_o'.
+halstruct: *M,_SCOPE: add_subtract.FA320
 halstruct: *W,SYNPRT (../1.5_src/full_adder.sv,8|0): Output port 'sum_o' is assigned asynchronously.
 halstruct: *W,SYNPRT (../1.5_src/full_adder.sv,7|0): Output port 'cout_o' is assigned asynchronously.
-halstruct: *M,_SCOPE: full_adder_32bit.genblk1[31].u0
-halstruct: *N,NUMDFF (../1.5_src/full_adder_32bit.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: *M,_SCOPE: add_subtract.genblk1[31].FAi
+halstruct: *W,ATLGLC (../1.5_src/add_subtract.sv,1|0): Glue logic inferred in top-level module/design-unit 'add_subtract'.
+@:add_subtract add_subtract
+halstruct: (../1.5_src/add_subtract.sv,11): HDL-statement inferred as glue logic.
+@:b_mod add_subtract
+halstruct: (../1.5_src/add_subtract.sv,34): HDL-statement inferred as glue logic.
+@:cout_o add_subtract
+halstruct: *N,NUMDFF (../1.5_src/add_subtract.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
 halstruct: Design facts generated in 'hal.design_facts'.
-halstruct: Total errors   = 0.
-halstruct: Total warnings = 258.
+halstruct: Total errors   = 32.
+halstruct: Total warnings = 71.
 ~:DSCNCK
 ^:DSCNCK
 ~:SLENEX

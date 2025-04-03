@@ -58,3 +58,92 @@ s57(26Mar2025:20:14:22):  xrun -sv -f full_adder_32bit_tb.list
 s58(26Mar2025:20:16:40):  xrun -sv -f full_adder_32bit_tb.list 
 s59(26Mar2025:22:41:47):  xrun -sv -f full_adder_32bit_tb.list 
 s60(26Mar2025:22:45:22):  xrun -sv -f full_adder_32bit_tb.list 
+s61(28Mar2025:15:51:07):  xrun -sv -f full_adder_32bit_tb.list 
+s62(28Mar2025:15:52:34):  xrun -sv -f full_adder_32bit_tb.list 
+s63(28Mar2025:15:55:22):  xrun -sv -f full_adder_32bit_tb.list 
+s64(28Mar2025:15:59:11):  xrun -sv -f full_adder_32bit_tb.list 
+s65(28Mar2025:16:04:49):  xrun -sv -f full_adder_32bit_tb.list 
+s66(28Mar2025:16:06:02):  xrun -sv -f full_adder_32bit_tb.list 
+s67(28Mar2025:16:08:33):  xrun -sv -f full_adder_32bit_tb.list 
+s68(28Mar2025:16:09:04):  xrun -sv -f full_adder_32bit_tb.list 
+s69(28Mar2025:16:09:37):  xrun -sv -f full_adder_32bit_tb.list 
+s70(28Mar2025:16:38:07):  xrun -sv -f full_adder_32bit_tb.list 
+s71(28Mar2025:16:38:55):  xrun -sv -f full_adder_32bit_tb.list 
+s72(28Mar2025:16:39:02):  xrun -hal -sv -f full_adder_32bit.list 
+s73(28Mar2025:16:39:36):  xrun -hal -sv -f full_adder_32bit.list 
+s74(28Mar2025:16:39:53):  xrun -hal -sv -f full_adder_32bit.list 
+s75(28Mar2025:16:40:21):  xrun -hal -sv -f full_adder_32bit.list 
+s76(28Mar2025:16:40:55):  xrun -sv -f full_adder_32bit_tb.list 
+s77(28Mar2025:16:41:45):  xrun -sv -f full_adder_32bit_tb.list 
+s78(28Mar2025:16:42:22):  xrun -sv -f full_adder_32bit_tb.list 
+s79(28Mar2025:16:42:44):  xrun -sv -f full_adder_32bit_tb.list 
+s80(28Mar2025:16:42:59):  xrun -sv -f full_adder_32bit_tb.list 
+s81(28Mar2025:16:43:46):  xrun -sv -f full_adder_32bit_tb.list 
+s82(28Mar2025:16:47:25):  xrun -sv -f full_adder_32bit_tb.list 
+s83(28Mar2025:16:48:52):  xrun -sv -f full_adder_32bit_tb.list 
+s84(28Mar2025:16:52:10):  xrun -sv -f full_adder_32bit_tb.list 
+s85(28Mar2025:16:54:51):  xrun -sv -f full_adder_32bit_tb.list 
+s86(28Mar2025:16:55:22):  xrun -sv -f full_adder_32bit_tb.list 
+s87(28Mar2025:16:56:00):  xrun -sv -f full_adder_32bit_tb.list 
+s88(29Mar2025:09:48:20):  xrun -sv -f full_adder_tb.list 
+s89(29Mar2025:09:50:37):  xrun -sv -f full_adder_32bit_tb.list 
+s90(02Apr2025:08:52:30):  xrun -sv -f full_adder_32bit_tb.list 
+s91(02Apr2025:08:53:43):  xrun -sv -f full_adder_32bit_tb.list 
+s92(02Apr2025:09:14:19):  xrun -sv -f full_adder_32bit_tb.list 
+s93(02Apr2025:09:15:21):  xrun -sv -f full_adder_32bit_tb.list 
+s94(02Apr2025:09:18:02):  xrun -sv -f full_adder_32bit_tb.list 
+s95(02Apr2025:09:18:20):  xrun -sv -f full_adder_32bit_tb.list 
+s96(02Apr2025:09:18:30):  xrun -sv -f full_adder_32bit_tb.list 
+s97(02Apr2025:09:18:42):  xrun -sv -f full_adder_32bit_tb.list 
+s98(02Apr2025:09:50:34):  xrun -sv -f full_adder_32bit_tb.list 
+s99(02Apr2025:09:50:43):  xrun -sv -f full_adder_32bit_tb.list 
+s100(02Apr2025:09:51:20):  xrun -sv -f full_adder_32bit_tb.list 
+s101(02Apr2025:09:59:47):  xrun -sv -f full_adder_32bit_tb.list 
+s102(02Apr2025:10:23:56):  xrun -sv -f full_adder_32bit_tb.list 
+s103(02Apr2025:10:24:04):  xrun -hal -sv -f full_adder_32bit.list 
+s104(02Apr2025:10:25:17):  xrun -hal -sv -f full_adder_32bit.list 
+s105(02Apr2025:10:25:30):  xrun -hal -sv -f full_adder_32bit.list 
+s106(02Apr2025:10:25:37):  xrun -hal -sv -f full_adder_32bit.list 
+s107(02Apr2025:10:28:11):  xrun -hal -sv -f full_adder_32bit.list 
+s108(02Apr2025:10:28:32):  xrun -hal -sv -f full_adder_32bit.list 
+s109(02Apr2025:10:29:12):  xrun -sv -f full_adder_32bit_tb.list 
+s110(02Apr2025:10:38:13):  xrun -sv -f full_adder_32bit_tb.list 
+s111(02Apr2025:10:38:32):  xrun -sv -f full_adder_32bit_tb.list 
+s112(02Apr2025:10:39:11):  xrun -sv -f full_adder_32bit_tb.list 
+s113(02Apr2025:10:39:55):  xrun -sv -f full_adder_32bit_tb.list 
+s114(02Apr2025:10:40:04):  xrun -sv -f full_adder_32bit_tb.list 
+s115(02Apr2025:10:40:19):  xrun -sv -f full_adder_32bit_tb.list 
+s116(02Apr2025:10:57:51):  xrun -sv -f full_adder_32bit_tb.list 
+s117(02Apr2025:10:58:09):  xrun -sv -f full_adder_32bit_tb.list 
+s118(02Apr2025:10:58:23):  xrun -sv -f full_adder_32bit_tb.list 
+s119(03Apr2025:17:31:42):  xrun -sv -f full_adder_32bit_tb.list 
+s120(03Apr2025:17:31:54):  xrun -sv -f full_adder_32bit_tb.list 
+s121(03Apr2025:17:33:12):  xrun -sv -f full_adder_32bit_tb.list 
+s122(03Apr2025:17:33:50):  xrun -sv -f full_adder_32bit_tb.list 
+s123(03Apr2025:17:36:19):  xrun -sv -f full_adder_32bit_tb.list 
+s124(03Apr2025:17:39:50):  xrun -sv -f full_adder_32bit_tb.list 
+s125(03Apr2025:17:41:30):  xrun -sv -f full_adder_32bit_tb.list 
+s126(03Apr2025:17:42:03):  xrun -sv -f full_adder_32bit_tb.list 
+s127(03Apr2025:17:42:37):  xrun -sv -f full_adder_32bit_tb.list 
+s128(03Apr2025:23:32:01):  xrun -hal -sv -f add_subtract.list 
+s129(03Apr2025:23:33:09):  xrun -hal -sv -f add_subtract.list 
+s130(03Apr2025:23:43:05):  xrun -hal -sv -f add_subtract.list 
+s131(03Apr2025:23:44:01):  xrun -hal -sv -f add_subtract.list 
+s132(03Apr2025:23:45:43):  xrun -sv -f add_subtract_tb.list 
+s133(03Apr2025:23:47:14):  xrun -sv -f add_subtract_tb.list 
+s134(03Apr2025:23:48:59):  xrun -sv -f add_subtract_tb.list 
+s135(03Apr2025:23:51:53):  xrun -sv -f add_subtract_tb.list 
+s136(03Apr2025:23:52:40):  xrun -sv -f add_subtract_tb.list 
+s137(03Apr2025:23:53:30):  xrun -sv -f add_subtract_tb.list 
+s138(03Apr2025:23:54:31):  xrun -sv -f add_subtract_tb.list 
+s139(03Apr2025:23:55:15):  xrun -sv -f add_subtract_tb.list 
+s140(03Apr2025:23:55:43):  xrun -sv -f add_subtract_tb.list 
+s141(03Apr2025:23:59:03):  xrun -sv -f add_subtract_tb.list 
+s142(03Apr2025:23:59:38):  xrun -sv -f add_subtract_tb.list 
+s143(04Apr2025:00:01:37):  xrun -sv -f add_subtract_tb.list 
+s144(04Apr2025:00:02:38):  xrun -sv -f add_subtract_tb.list 
+s145(04Apr2025:00:12:05):  xrun -sv -f add_subtract_tb.list 
+s146(04Apr2025:00:12:29):  xrun -sv -f add_subtract_tb.list 
+s147(04Apr2025:00:12:50):  xrun -sv -f add_subtract_tb.list 
+s148(04Apr2025:00:12:59):  xrun -sv -f add_subtract_tb.list 
+s149(04Apr2025:00:13:59):  xrun -sv -f add_subtract_tb.list 

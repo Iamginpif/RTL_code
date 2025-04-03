@@ -1,2 +1,2 @@
-../1.3_src/demux_1to4.sv
-../2.3_tb/demux_1to4_tb.sv
+../1.1_src/mux_4to1.sv
+../2.1_tb/mux_4to1_tb.sv

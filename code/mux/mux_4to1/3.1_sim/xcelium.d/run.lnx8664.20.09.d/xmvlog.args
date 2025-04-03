@@ -7,7 +7,6 @@
 -RUNMODE
 -sv
 ../1.1_src/mux_4to1.sv
-../2.1_tb/mux_4to1_tb.sv
 -CDSLIB
 ./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
 -HDLVAR

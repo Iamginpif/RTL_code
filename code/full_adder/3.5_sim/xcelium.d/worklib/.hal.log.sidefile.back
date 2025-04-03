@@ -7,6 +7,6 @@ halsynth: Traversing design hierarchy....
 ~:MUDREG
 ~:MULWIR
 ~:UNDRIV
-halsynth: *M,_SCOPE: full_adder_32bit
+halsynth: *M,_SCOPE: add_subtract
 halsynth: Total errors   = 0.
 halsynth: Total warnings = 0.

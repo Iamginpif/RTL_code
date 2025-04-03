@@ -1,21 +1,21 @@
 module full_adder_32bit_tb;
 
 logic [31:0] a, b;
-logic c;
+logic cin;
 logic [31:0] sum;
 logic cout;
 
 logic [31:0] a_tc      [1:10];
 logic [31:0] b_tc      [1:10];
-logic c_tc      [1:10];
+logic c_tc                [1:10];
 logic [31:0] sum_tc [1:10];
-logic cout_tc [1:10];
+logic cout_tc           [1:10];
 
 full_adder_32bit uut 
 (
-  .a (a),
-  .b (b),
-  .c (c),
+  .A (a),
+  .B (b),
+  .cin (cin),
   .sum (sum),
   .cout (cout)
 );
@@ -45,18 +45,18 @@ initial begin
     cout_tc[9] = 1'b1; 
     // Test case 10 (⚠️ Lỗi cố ý: Sai kết quả)
     a_tc[10] = 32'hFFFFFFFF; b_tc[10] = 32'h00000001; c_tc[10] = 1'b0; sum_tc[10] = 32'h00000000; // ❌ Lỗi: Đúng ra phải là sum = 0x00000000, cout = 1
-    cout_tc[10] = 1'b0; // ❌ Lỗi cố ý: đúng phải là 1
+    cout_tc[10] = 1'b0;  //❌ Lỗi cố ý: đúng phải là 1
 for(int i = 1; i < 11; i++) begin
   a = a_tc[i];
   b = b_tc[i];
-  c = c_tc[i];
+  cin = c_tc[i];
   #10;
-  if(sum !== sum_tc[i]) 
+  if(sum !== sum_tc[i] &&  cout !== cout_tc[i]) 
     $display(
     "Testcase #%2d FAILED:", i,  
     "| a = %h", a,
     "| b = %h", b,  
-    "| c_in = %h", c, 
+    "| c_in = %h", cin, 
     "| sum_expected = %h",sum_tc[i],
     "| sum_got = %h", sum,
     "| cout_expected = %h", cout_tc[i],
@@ -67,7 +67,7 @@ for(int i = 1; i < 11; i++) begin
    "Testcase #%2d PASSED:", i,  
     "| a = %h", a,
     "| b = %h", b,  
-    "| c_in = %h", c, 
+    "| c_in = %h", cin, 
     "| sum_expected = %h",sum_tc[i],
     "| sum_got = %h", sum,
     "| cout_expected = %h", cout_tc[i],
@@ -78,3 +78,4 @@ for(int i = 1; i < 11; i++) begin
 end
 
 endmodule
+

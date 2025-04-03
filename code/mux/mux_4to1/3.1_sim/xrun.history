@@ -32,3 +32,7 @@ s31(15Mar2025:17:54:54):  xrun -sv -f mux_4to1_tb.list
 s32(15Mar2025:17:59:04):  xrun -sv -f mux_4to1_tb.list 
 s33(15Mar2025:17:59:56):  xrun -sv -f mux_4to1_tb.list 
 s34(18Mar2025:23:39:40):  xrun -sv -f mux_4to1_tb.list 
+s35(29Mar2025:09:43:46):  xrun -sv -f mux_4to1.list 
+s36(29Mar2025:09:44:48):  xrun -sv -f mux_4to1.list 
+s37(29Mar2025:09:45:38):  xrun -sv -f mux_4to1.list 
+s38(29Mar2025:09:46:54):  xrun -sv -f mux_4to1.list 

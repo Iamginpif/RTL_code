@@ -1,8 +1,8 @@
 define XMSIMRC	( /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
 define AMSRC	( /opt/cadence/installs/XCELIUM2009/tools/xcelium/files/amsrc, ~/.amsrc )
 include ./hdlrun.var
-define SNAPSHOT worklib.mux_4to1_tb:sv
+define SNAPSHOT worklib.mux_4to1:sv
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ( + => worklib )
 define ELAB_SNAPSHOT
-define SNAPSHOT worklib.mux_4to1_tb:sv
+define SNAPSHOT worklib.mux_4to1:sv

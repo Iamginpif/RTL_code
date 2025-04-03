@@ -1,3 +1,3 @@
 #!/bin/bash
 
-xrun -sv -f demux_1to4_tb.list
+xrun -sv -f mux_4to1.list
