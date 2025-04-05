@@ -1,0 +1,2 @@
+../1.src/full_adder_32bit.sv
+../2.tb/full_adder_32bit_tb.sv

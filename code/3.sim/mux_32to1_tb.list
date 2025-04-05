@@ -1,0 +1,2 @@
+../1.src/mux_32to1.sv
+../2.tb/mux_32to1_tb.sv

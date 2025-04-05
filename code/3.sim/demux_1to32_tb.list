@@ -1,0 +1,2 @@
+../1.src/demux_1to32.sv
+../2.tb/demux_1to32_tb.sv
