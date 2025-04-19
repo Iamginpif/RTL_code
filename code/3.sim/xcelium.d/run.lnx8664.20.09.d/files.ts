@@ -6,3 +6,7 @@
 1743820736 /home/gin/Github/RTL_code/code/2.tb/demux_1to32_tb.sv
 1743825278 /home/gin/Github/RTL_code/code/1.src/mux_4to1.sv
 1743698730 /home/gin/Github/RTL_code/code/2.tb/add_subtract_tb.sv
+1745087039 /home/gin/Github/RTL_code/code/1.src/brcomp.sv
+1745087409 /home/gin/Github/RTL_code/code/2.tb/brcomp_tb.sv
+1743696481 /home/gin/Github/RTL_code/code/1.src/full_adder_32bit.sv
+1743676955 /home/gin/Github/RTL_code/code/2.tb/full_adder_32bit_tb.sv

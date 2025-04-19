@@ -1,5 +1,18 @@
 halsynth: Loading design snapshot....
 halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: brcomp
+halsynth: *W,MULNBA (../1.src/brcomp.sv,15|0): In module 'brcomp', register 'br_less' has multiple non-blocking assignments.
+halsynth: *W,LOOPTM (../1.src/brcomp.sv,13|0): Operation between a loop variable and a non-constant value is repeated more than 10 times.
+halsynth: (../1.src/brcomp.sv,14): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,15): Source HDL information for the error/warning mentioned above.
+halsynth: *W,NBCOMB (../1.src/brcomp.sv,7|0): Non-blocking assignment encountered in a combinational block.
+halsynth: (../1.src/brcomp.sv,8|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,15|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,24|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,26|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,NBCOMB (../1.src/brcomp.sv,7|0): Non-blocking assignment encountered in a combinational block.
+halsynth: (../1.src/brcomp.sv,11|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,9|0): Source HDL information for the error/warning mentioned above.
 ~:CLKOUT
 ~:CLKSRD
 ~:COMBLP
@@ -7,6 +20,5 @@ halsynth: Traversing design hierarchy....
 ~:MUDREG
 ~:MULWIR
 ~:UNDRIV
-halsynth: *M,_SCOPE: mux_4to1
 halsynth: Total errors   = 0.
-halsynth: Total warnings = 0.
+halsynth: Total warnings = 4.

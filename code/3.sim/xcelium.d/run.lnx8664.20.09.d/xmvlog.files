@@ -2,5 +2,5 @@
 // File created by:  xrun
 // Do not modify this file
 //
-/home/gin/Github/RTL_code/code/1.src/add_subtract.sv
-/home/gin/Github/RTL_code/code/2.tb/add_subtract_tb.sv
+/home/gin/Github/RTL_code/code/1.src/brcomp.sv
+/home/gin/Github/RTL_code/code/2.tb/brcomp_tb.sv

@@ -1,21 +1,50 @@
 hal: Options:   -cdslib ./xcelium.d/run.lnx8664.20.09.d/cds.lib -logfile xrun.log -f /home/gin/Github/RTL_code/code/3.sim/xcelium.d/run.lnx8664.20.09.d/hal.args .
-hal: Snapshot:  worklib.mux_4to1:sv.
+hal: Snapshot:  worklib.brcomp:sv.
 hal: Workspace: /home/gin/Github/RTL_code/code/3.sim.
-hal: Date: Sat Apr 05 10:53:25 +07 2025.
+hal: Date: Sun Apr 20 00:33:01 +07 2025.
 hal: Running on elaborated SNAPSHOT.....
 hal: *M,_SCOPE: __dummy_top
-halcheck: *M,_SCOPE: mux_4to1
-halcheck: *N,PRTCNT (../1.src/mux_4to1.sv,1|0): Module/Entity 'mux_4to1' contains '3' ports.
-halcheck: (../1.src/mux_4to1.sv,1): Number of Input ports: 2.
-halcheck: (../1.src/mux_4to1.sv,1): Number of Output ports: 1.
-halcheck: *W,STYVAL (../1.src/mux_4to1.sv,3|0): Numeric value '3' used for identifier 'data_i'. Use constants to avoid portability issues.
-halcheck: *W,STYVAL (../1.src/mux_4to1.sv,4|0): Numeric value '1' used for identifier 'sel_i'. Use constants to avoid portability issues.
-halcheck: *W,NOBLKN (../1.src/mux_4to1.sv,8|0): Each block should be labeled with a meaningful name.
-halcheck: Total errors   = 0.
-halcheck: Total warnings = 3.
+halcheck: *M,_SCOPE: brcomp
+halcheck: *W,MAXLEN (../1.src/brcomp.sv,17|0): The HDL source line is 103 characters, which exceeds the recommended length of 80 characters.
+halcheck: *N,PRTCNT (../1.src/brcomp.sv,1|0): Module/Entity 'brcomp' contains '5' ports.
+halcheck: (../1.src/brcomp.sv,1): Number of Input ports: 3.
+halcheck: (../1.src/brcomp.sv,1): Number of Output ports: 2.
+halcheck: *W,STYVAL (../1.src/brcomp.sv,3|0): Numeric value '31' used for identifier 'rs1_data'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (../1.src/brcomp.sv,3|0): Use a separate line for each HDL declaration.
+halcheck: *N,DECLIN (../1.src/brcomp.sv,5|0): Use a separate line for each HDL declaration.
+halcheck: *W,NOBLKN (../1.src/brcomp.sv,7|0): Each block should be labeled with a meaningful name.
+halcheck: *W,LRGOPR (../1.src/brcomp.sv,10|0): Arithmetic or relational operation performed on large operands in module/design-unit brcomp.
+halcheck: *E,METAEQ (../1.src/brcomp.sv,10|0): In module 'brcomp', the === comparison operator is not supported.
+halcheck: *E,BLNBLK (../1.src/brcomp.sv,11|0): Signal 'br_equal' is assigned via both blocking and non-blocking assignments.
+halcheck: (../1.src/brcomp.sv,9): Blocking assignment to br_equal.
+halcheck: (../1.src/brcomp.sv,11): Non blocking assignment to br_equal.
+halcheck: *E,BLNBLK (../1.src/brcomp.sv,15|0): Signal 'br_less' is assigned via both blocking and non-blocking assignments.
+halcheck: (../1.src/brcomp.sv,8): Blocking assignment to br_less.
+halcheck: (../1.src/brcomp.sv,15): Non blocking assignment to br_less.
+halcheck: *E,BLNBLK (../1.src/brcomp.sv,24|0): Signal 'br_less' is assigned via both blocking and non-blocking assignments.
+halcheck: (../1.src/brcomp.sv,8): Blocking assignment to br_less.
+halcheck: (../1.src/brcomp.sv,24): Non blocking assignment to br_less.
+halcheck: *E,BLNBLK (../1.src/brcomp.sv,26|0): Signal 'br_less' is assigned via both blocking and non-blocking assignments.
+halcheck: (../1.src/brcomp.sv,8): Blocking assignment to br_less.
+halcheck: (../1.src/brcomp.sv,26): Non blocking assignment to br_less.
+halcheck: Total errors   = 5.
+halcheck: Total warnings = 4.
 hal: *M,_SCOPE: __dummy_top
 halsynth: Loading design snapshot....
 halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: brcomp
+halsynth: *W,MULNBA (../1.src/brcomp.sv,15|0): In module 'brcomp', register 'br_less' has multiple non-blocking assignments.
+halsynth: *W,LOOPTM (../1.src/brcomp.sv,13|0): Operation between a loop variable and a non-constant value is repeated more than 10 times.
+halsynth: (../1.src/brcomp.sv,14): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,15): Source HDL information for the error/warning mentioned above.
+halsynth: *W,NBCOMB (../1.src/brcomp.sv,7|0): Non-blocking assignment encountered in a combinational block.
+halsynth: (../1.src/brcomp.sv,8|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,15|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,24|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,26|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,NBCOMB (../1.src/brcomp.sv,7|0): Non-blocking assignment encountered in a combinational block.
+halsynth: (../1.src/brcomp.sv,11|0): Source HDL information for the error/warning mentioned above.
+halsynth: (../1.src/brcomp.sv,9|0): Source HDL information for the error/warning mentioned above.
 ~:CLKOUT
 ~:CLKSRD
 ~:COMBLP
@@ -23,22 +52,84 @@ halsynth: Traversing design hierarchy....
 ~:MUDREG
 ~:MULWIR
 ~:UNDRIV
-halsynth: *M,_SCOPE: mux_4to1
 halsynth: Total errors   = 0.
-halsynth: Total warnings = 0.
+halsynth: Total warnings = 4.
 hal: *M,_SCOPE: __dummy_top
-halstruct: *M,_SCOPE: mux_4to1
-halstruct: *W,TPOUNR (../1.src/mux_4to1.sv,13|0): Output 'out_o' of top-level module is not a register.
-@:out_o 
-@:out_o 
-halstruct: *W,IOCOMB (../1.src/mux_4to1.sv,1|0): Combinational path detected between top-level input 'mux_4to1.data_i[0]' and top-level output 'mux_4to1.out_o'.
-halstruct: *W,IOCOMB (../1.src/mux_4to1.sv,1|0): Combinational path detected between top-level input 'mux_4to1.data_i[1]' and top-level output 'mux_4to1.out_o'.
-halstruct: *W,IOCOMB (../1.src/mux_4to1.sv,1|0): Combinational path detected between top-level input 'mux_4to1.data_i[2]' and top-level output 'mux_4to1.out_o'.
-halstruct: *W,IOCOMB (../1.src/mux_4to1.sv,1|0): Combinational path detected between top-level input 'mux_4to1.data_i[3]' and top-level output 'mux_4to1.out_o'.
-halstruct: *N,NUMDFF (../1.src/mux_4to1.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: *M,_SCOPE: brcomp
+halstruct: *W,TPOUNR (../1.src/brcomp.sv,26|0): Output 'br_less' of top-level module is not a register.
+@:br_less 
+@:br_less 
+halstruct: *W,TPOUNR (../1.src/brcomp.sv,9|0): Output 'br_equal' of top-level module is not a register.
+@:br_equal 
+@:br_equal 
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[0]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[0]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[1]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[1]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[2]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[2]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[3]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[3]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[4]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[4]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[5]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[5]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[6]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[6]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[7]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[7]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[8]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[8]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[9]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[9]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[10]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[10]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[11]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[11]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[12]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[12]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[13]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[13]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[14]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[14]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[15]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[15]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[16]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[16]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[17]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[17]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[18]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[18]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[19]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[19]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[20]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[20]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[21]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[21]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[22]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[22]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[23]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[23]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[24]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[24]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[25]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[25]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[26]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[26]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[27]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[27]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[28]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[28]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[29]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[29]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[30]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[30]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs1_data[31]' and top-level output 'brcomp.br_less'.
+halstruct: *W,IOCOMB (../1.src/brcomp.sv,1|0): Combinational path detected between top-level input 'brcomp.rs2_data[31]' and top-level output 'brcomp.br_less'.
+halstruct: *N,NUMDFF (../1.src/brcomp.sv,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
 halstruct: Design facts generated in 'hal.design_facts'.
 halstruct: Total errors   = 0.
-halstruct: Total warnings = 5.
+halstruct: Total warnings = 66.
 ~:DSCNCK
 ^:DSCNCK
 ~:SLENEX

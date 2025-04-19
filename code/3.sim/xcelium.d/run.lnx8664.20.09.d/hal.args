@@ -7,7 +7,7 @@
 ./xcelium.d/run.lnx8664.20.09.d/cds.lib
 -hdlvar
 ./xcelium.d/run.lnx8664.20.09.d/hdl.var
-worklib.mux_4to1:sv
+worklib.brcomp:sv
 -logfile
 xrun.log
 -cflag

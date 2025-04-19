@@ -4,4 +4,4 @@
 //
 -sv
 -f
-add_subtract_tb.list
+brcomp_tb.list

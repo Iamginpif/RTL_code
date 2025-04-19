@@ -6,8 +6,8 @@
 ./xcelium.d/run.lnx8664.20.09.d
 -RUNMODE
 -sv
-../1.src/add_subtract.sv
-../2.tb/add_subtract_tb.sv
+../1.src/brcomp.sv
+../2.tb/brcomp_tb.sv
 -CDSLIB
 ./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
 -HDLVAR
