@@ -4,7 +4,10 @@ module brcomp
   input br_unsign, // 1 if unsign, 0 if sign
   output reg br_less, br_equal
 );
-always_comb begin
+add_subtract as
+  (
+    .
+/*always_comb begin
   br_less  = 1'b0;
   br_equal = 1'b0;
   if(rs1_data == rs2_data) begin
