@@ -4,11 +4,13 @@ module brcomp
   input br_unsign, // 1 if unsign, 0 if sign
   output reg br_less, br_equal
 );
+assign cin = 1'b1;
 add_subtract as
   (
     .a_i(rs1_data),
     .b_i(rs2_data),
-    .cin_i(
+    .cin_i(cin),
+    .s
 /*always_comb begin
   br_less  = 1'b0;
   br_equal = 1'b0;
