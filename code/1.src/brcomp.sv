@@ -6,7 +6,9 @@ module brcomp
 );
 add_subtract as
   (
-    .
+    .a_i(rs1_data),
+    .b_i(rs2_data),
+    .cin_i(
 /*always_comb begin
   br_less  = 1'b0;
   br_equal = 1'b0;
